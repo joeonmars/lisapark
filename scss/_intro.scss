@@ -6,7 +6,10 @@
 	//display:none;
 	width: 100%;
 	height: 20%;
-	background: black;
+	background-image: url("../images/ajax-loader.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: black;
 
 	>.closeButton{
 		@include icon-sprite("close-video");

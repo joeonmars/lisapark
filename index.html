@@ -33,12 +33,12 @@
 	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.quicksand.js"></script> 
-	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/jquery.foundation.reveal.js"></script>
 	<script type="text/javascript" src="js/contact.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="js/addons.js"></script>
+	<script type="text/javascript" src="js/preloadjs-0.3.0.min.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -84,7 +84,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <!-- Intro Video wrap start -->
 <div id="intro" class="section">
 	<div class="videoPlaceholder">
-		<iframe src="http://player.vimeo.com/video/58863266" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<iframe src="http://player.vimeo.com/video/58863266?autoplay=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</div>
 </div>
 
@@ -172,136 +172,8 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 			<div class="clear"></div>
 
 			<!-- Portfolio Items -->
-			<ul class="portfolio"> 
-				<li class="six columns resize" data-id="id-1" data-type="logos">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/1.jpg" alt="" />
-							<span class="portfolio-inner" >
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Logo</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li> 
-
-				<li class="three columns" data-id="id-2" data-type="character">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/2.jpg" alt="" />
-							<span class="portfolio-inner" >
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">character</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li> 
-
-				<li class="three columns" data-id="id-3" data-type="webdesign">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/3.jpg" alt="" />
-							<span class="portfolio-inner" >
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Web design</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-			
-				<li class="three columns" data-id="id-4" data-type="logos">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/4.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Logo</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-
-				<li class="three columns" data-id="id-5" data-type="prints">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/5.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Prints</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-
-				<li class="three columns" data-id="id-6" data-type="webdesign">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/6.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Web design</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-
-				<li class="three columns" data-id="id-7" data-type="prints">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/7.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Prints</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-		
-				<li class="three columns" data-id="id-8" data-type="logos">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/8.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Logo</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-
-				<li class="six columns resize" data-id="id-10" data-type="webdesign">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/10.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Web design</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li>
-
-				<li class="three columns" data-id="id-9" data-type="character">
-					<a href="#" data-reveal-id="folio1">
-						<div class="portfolio_thumb"><img src="demo/works/9.jpg" alt="" />
-							<span class="portfolio-inner">
-								<span class="zoom-inner">
-									<span class="overlay title">Lorem ipsum dolor</span>
-									<span class="overlay-tag">Character</span>
-								</span>
-							</span>
-						</div>
-					</a>
-				</li> 
+			<ul class="portfolio">
+				<!-- insert dynamically generated content here -->
 			</ul>
 		</div>
 	</div>
@@ -833,6 +705,24 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <a class="close-reveal-modal"><img src="images/close.png" alt=""/></a>
 </div>
 <!-- Main wrap End -->
+
+<div id="hidden-wrapper">
+	<!-- thumbnail template -->
+	<div id="thumbnail-template">
+		<li class="{numcols} columns resize" data-id="id-{id}" data-type="{category}">
+			<a href="#" data-reveal-id="folio1">
+				<div class="portfolio_thumb"><img src="images/thumbnail/placeholder.jpg" alt="" />
+					<span class="portfolio-inner" >
+						<span class="zoom-inner">
+							<span class="overlay title">{title}</span>
+							<span class="overlay-tag">{tag}</span>
+						</span>
+					</span>
+				</div>
+			</a>
+		</li> 
+	</div>
+</div>
 
 <!-- jQuery Files -->
 <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
