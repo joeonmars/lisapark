@@ -1,0 +1,14 @@
+// --- Image Sprites ---
+$icon-sprite-dimensions: true;
+$icon-layout:smart;
+
+@import "icon/*.png"; 
+@include all-icon-sprites;
+
+@import "intro";
+
+body{
+	&.noScroll{
+		overflow: hidden;
+	}
+}
