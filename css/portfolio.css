@@ -1,0 +1,61 @@
+/* Filter */
+
+.filter-wrap {
+border-top:1px dotted #282828;
+border-bottom:1px dotted #282828;
+margin-bottom:40px;
+padding:2px 0;
+}
+
+.filter {
+	display:table;
+	margin: 0 auto;
+}
+
+.filter li {
+	float: left;
+	padding: 2px 0px;
+	margin-left:1px;
+	margin-bottom:2px;
+	background:#282828;
+}
+
+.filter li a { 
+	display: block;
+	padding: 5px 20px;
+	color: #fff;
+	text-transform:uppercase;
+	font-size:13px;
+	letter-spacing:0.4px;
+	font-weight:400;
+}
+
+.filter li:hover {background:#e3007b;}
+.filter li a:hover {color: #fff !important;}
+.currents  {background:#e3007b !important;}
+.currents a {	color: #fff !important;}
+
+
+/* Portfolio Items */
+.portfolio li {
+	float: left !important;
+	padding:3px !important;
+	margin:0px !important;
+	position:relative;
+	overflow:hidden;
+}
+
+.portfolio a { display: block;}
+
+.portfolio_thumb {
+	position:relative;
+	overflow:hidden;
+}
+
+.portfolio_thumb img {
+	float: left;
+	overflow: hidden;
+	width:100%;
+	height:auto;
+}
+

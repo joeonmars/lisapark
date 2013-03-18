@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'icomoon-social';
+    src: url('icomoon-social.eot');
+    src: url('icomoon-social.eot?#iefix') format('embedded-opentype'),
+         url('icomoon-social.woff') format('woff'),
+         url('icomoon-social.ttf') format('truetype'),
+         url('icomoon-social.svg#Entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon-social';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-google-plus:before, .icon-dribbble:before, .icon-picassa:before, .icon-facebook:before, .icon-twitter:before, .icon-feed:before, .icon-github:before, .icon-forrst:before, .icon-tumblr:before, .icon-reddit:before, .icon-vimeo:before, .icon-flickr:before, .icon-deviantart:before, .icon-joomla:before, .icon-skype:before, .icon-linkedin:before, .icon-lastfm:before {
+	font-family: 'icomoon-social';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-google-plus:before {
+	content: "\e000";
+}
+.icon-dribbble:before {
+	content: "\e001";
+}
+.icon-picassa:before {
+	content: "\e002";
+}
+.icon-facebook:before {
+	content: "\e004";
+}
+.icon-twitter:before {
+	content: "\e005";
+}
+.icon-feed:before {
+	content: "\e006";
+}
+.icon-github:before {
+	content: "\e007";
+}
+.icon-forrst:before {
+	content: "\e008";
+}
+.icon-tumblr:before {
+	content: "\e009";
+}
+.icon-reddit:before {
+	content: "\e00a";
+}
+.icon-vimeo:before {
+	content: "\e00b";
+}
+.icon-flickr:before {
+	content: "\e00c";
+}
+.icon-deviantart:before {
+	content: "\e003";
+}
+.icon-joomla:before {
+	content: "\e00d";
+}
+.icon-skype:before {
+	content: "\e00e";
+}
+.icon-linkedin:before {
+	content: "\e00f";
+}
+.icon-lastfm:before {
+	content: "\e010";
+}
