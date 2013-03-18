@@ -1,12 +1,14 @@
 var header;
 var introSection;
+var videoMinRatio = 1024/768;
 
 // a global resize handler
 $(window).resize(function() {
   // resize intro video section
+  var windowWidth = $(window).width();
   var windowHeight = $(window).height();
   var headerHeight = $(header).height();
-  var introSectionHeight = (windowHeight - headerHeight);
+  var introSectionHeight = (windowWidth/windowHeight >= videoMinRatio) ? (windowHeight - headerHeight) : (windowWidth / videoMinRatio);
   $(introSection).css('padding-top', headerHeight+'px');
   $(introSection).height(introSectionHeight);
 });
