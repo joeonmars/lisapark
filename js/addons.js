@@ -23,12 +23,25 @@ function onMessageReceived(e) {
   var data = JSON.parse(e.data);
   
   switch (data.event) {
+    case 'ready':
+    	//console.log('VIMEO READY!');
+    	post('addEventListener', 'play');
+    	post('addEventListener', 'pause');
+    	post('addEventListener', 'finish');
+    	break;
+
     case 'play':
+    	//console.log('VIMEO PLAY!');
     	isIntroVideoPaused = false;
       break;
        
     case 'pause':
+    	//console.log('VIMEO PAUSE!');
+    	isIntroVideoPaused = true;
+    	break;
+
     case 'finish':
+    	//console.log('VIMEO FINISH!');
       isIntroVideoPaused = true;
       break;
   }
