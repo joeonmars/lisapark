@@ -186,7 +186,7 @@ function createPortfolio(assetResult) {
 	var video = $('.portfolioVideo');
 	var overlay = $('.reveal-modal');
 	$(window).resize(function() {
-		var videoWidth = overlay.width();
+		var videoWidth = Math.min(1040, overlay.width());
 		video.attr('height', videoWidth / (16/9) + 'px');
 
 		overlay.css('min-height', $(window).height() - $('.header').height());
