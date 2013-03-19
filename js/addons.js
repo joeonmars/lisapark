@@ -181,4 +181,11 @@ function createPortfolio(assetResult) {
 			$('#folio'+(i+1)+' .portfolioVideo').hide();
 		}
 	}
+
+	// resize the videos in iframe
+	var video = $('.portfolioVideo');
+	$(window).resize(function() {
+		var videoWidth = $('.reveal-modal').width();
+		video.attr('height', videoWidth / (16/9) + 'px');
+	});
 };

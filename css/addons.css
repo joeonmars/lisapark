@@ -41,6 +41,10 @@
   height: 100%;
 }
 
+body {
+  min-width: 320px;
+  min-height: 320px;
+}
 body.noScroll {
   overflow: hidden;
 }

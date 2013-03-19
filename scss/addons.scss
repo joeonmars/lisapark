@@ -8,6 +8,9 @@ $icon-layout:smart;
 @import "intro";
 
 body{
+	min-width: 320px;
+	min-height: 320px;
+	
 	&.noScroll{
 		overflow: hidden;
 	}
