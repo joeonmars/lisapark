@@ -2,7 +2,8 @@ var header;
 var introSection;
 var introVideo;
 var videoMinRatio = 1024/768;
-var isIntroVideoPaused = true;
+var isIntroVideoPaused = false;
+var isIntroReady = false;
 
 // Helper function for sending a message to the vimeo player
 function post(action, value) {
@@ -23,12 +24,26 @@ function onMessageReceived(e) {
   var data = JSON.parse(e.data);
   
   switch (data.event) {
+    case 'ready':
+    	//console.log('VIMEO READY!');
+    	this.isIntroReady = true;
+    	post('addEventListener', 'play');
+    	post('addEventListener', 'pause');
+    	post('addEventListener', 'finish');
+    	break;
+
     case 'play':
+    	//console.log('VIMEO PLAY!');
     	isIntroVideoPaused = false;
       break;
        
     case 'pause':
+    	//console.log('VIMEO PAUSE!');
+    	isIntroVideoPaused = true;
+    	break;
+
     case 'finish':
+    	//console.log('VIMEO FINISH!');
       isIntroVideoPaused = true;
       break;
   }
@@ -55,7 +70,7 @@ $(window).resize(function() {
 
 
 $(window).scroll(function(e) {
-	if(!isIntroVideoPaused) {
+	if(!isIntroVideoPaused && isIntroReady) {
 		if($(window).scrollTop() > $(introSection).height()) {
 			post('pause');
 		}
