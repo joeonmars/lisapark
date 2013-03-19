@@ -3,7 +3,7 @@
 		{
 			"category": "installation",
 			"title": "Project 01",
-			"tag": "Logo",
+			"tag": "Installation",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/1.jpg",
 			"fullimage": "images/project/1.jpg",
@@ -15,7 +15,7 @@
 		{
 			"category": "photography",
 			"title": "Project 02",
-			"tag": "Web Design",
+			"tag": "Photography",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/2.jpg",
 			"videoid": "61442808",
@@ -51,7 +51,7 @@
 		{
 			"category": "installation",
 			"title": "Project 05",
-			"tag": "Logo",
+			"tag": "Installation",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/5.jpg",
 			"fullimage": "images/project/5.jpg",
@@ -63,7 +63,7 @@
 		{
 			"category": "photography",
 			"title": "Project 06",
-			"tag": "Web Design",
+			"tag": "Photography",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/6.jpg",
 			"videoid": "61442808",
@@ -87,7 +87,7 @@
 		{
 			"category": "photography",
 			"title": "Project 08",
-			"tag": "Web Design",
+			"tag": "Photography",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/8.jpg",
 			"videoid": "61442808",
@@ -99,7 +99,7 @@
 		{
 			"category": "installation",
 			"title": "Project 09",
-			"tag": "Logo",
+			"tag": "Installation",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/9.jpg",
 			"fullimage": "images/project/9.jpg",
@@ -147,7 +147,7 @@
 		{
 			"category": "installation",
 			"title": "Project 13",
-			"tag": "Logo",
+			"tag": "Installation",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/13.jpg",
 			"fullimage": "images/project/13.jpg",
@@ -159,7 +159,7 @@
 		{
 			"category": "photography",
 			"title": "Project 14",
-			"tag": "Web Design",
+			"tag": "Photography",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/14.jpg",
 			"videoid": "61442808",
@@ -183,7 +183,7 @@
 		{
 			"category": "photography",
 			"title": "Project 16",
-			"tag": "Web Design",
+			"tag": "Photography",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/16.jpg",
 			"videoid": "61442808",
@@ -195,7 +195,7 @@
 		{
 			"category": "installation",
 			"title": "Project 17",
-			"tag": "Logo",
+			"tag": "Installation",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/17.jpg",
 			"fullimage": "images/project/17.jpg",
