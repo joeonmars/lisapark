@@ -125,7 +125,7 @@ function createPortfolio(assetResult) {
 
 	for(i=0; i<l; ++i) {
 		var portfolio = portfolios[i];
-		var str = thumbnailTemplate.replace('{numcols}', cols[i%cols.length]).replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
+		var str = thumbnailTemplate.replace('{numcols}', 'three'/*cols[i%cols.length]*/).replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
 		var el = $(str);
 		$(portfolioContainer).append(el);
 	}
@@ -184,8 +184,11 @@ function createPortfolio(assetResult) {
 
 	// resize the videos in iframe
 	var video = $('.portfolioVideo');
+	var overlay = $('.reveal-modal');
 	$(window).resize(function() {
-		var videoWidth = $('.reveal-modal').width();
+		var videoWidth = overlay.width();
 		video.attr('height', videoWidth / (16/9) + 'px');
+
+		overlay.css('min-height', $(window).height() - $('.header').height());
 	});
 };

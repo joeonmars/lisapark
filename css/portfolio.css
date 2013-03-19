@@ -39,7 +39,7 @@ padding:2px 0;
 /* Portfolio Items */
 .portfolio li {
 	float: left !important;
-	padding:3px !important;
+	padding:0px !important;
 	margin:0px !important;
 	position:relative;
 	overflow:hidden;

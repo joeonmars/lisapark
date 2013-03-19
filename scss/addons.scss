@@ -10,6 +10,7 @@ $icon-layout:smart;
 body{
 	min-width: 320px;
 	min-height: 320px;
+	overflow-x: hidden;
 	
 	&.noScroll{
 		overflow: hidden;

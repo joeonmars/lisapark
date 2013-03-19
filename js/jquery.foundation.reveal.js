@@ -134,7 +134,7 @@
         //
         // Get the current css 'top' property value in decimal format.
         //
-        topMeasure = parseInt( modal.css( 'top' ), 10 ),
+        topMeasure = $('.header').height(), //parseInt( modal.css( 'top' ), 10 ),
         //
         // Calculate the top offset.
         //
