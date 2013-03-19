@@ -6,11 +6,11 @@
 			"tag": "Logo",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/1.jpg",
-			"image": "images/project/1.jpg",
+			"fullimage": "images/project/1.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "webdesign",
@@ -18,11 +18,11 @@
 			"tag": "Web Design",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/2.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "prints",
@@ -30,11 +30,11 @@
 			"tag": "Prints",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/3.jpg",
-			"image": "images/project/3.jpg",
+			"fullimage": "images/project/3.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "character",
@@ -42,11 +42,11 @@
 			"tag": "Character",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/4.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "logos",
@@ -54,11 +54,11 @@
 			"tag": "Logo",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/5.jpg",
-			"image": "images/project/5.jpg",
+			"fullimage": "images/project/5.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "webdesign",
@@ -66,11 +66,11 @@
 			"tag": "Web Design",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/6.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "prints",
@@ -78,11 +78,11 @@
 			"tag": "Prints",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/7.jpg",
-			"image": "images/project/7.jpg",
+			"fullimage": "images/project/7.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "webdesign",
@@ -90,11 +90,11 @@
 			"tag": "Web Design",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/8.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "logos",
@@ -102,11 +102,11 @@
 			"tag": "Logo",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/9.jpg",
-			"image": "images/project/9.jpg",
+			"fullimage": "images/project/9.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "character",
@@ -114,11 +114,11 @@
 			"tag": "Character",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/10.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "prints",
@@ -126,11 +126,11 @@
 			"tag": "Prints",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/11.jpg",
-			"image": "images/project/11.jpg",
+			"fullimage": "images/project/11.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "character",
@@ -138,11 +138,11 @@
 			"tag": "Character",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/12.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "logos",
@@ -150,11 +150,11 @@
 			"tag": "Logo",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/13.jpg",
-			"image": "images/project/13.jpg",
+			"fullimage": "images/project/13.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "webdesign",
@@ -162,11 +162,11 @@
 			"tag": "Web Design",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/14.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "prints",
@@ -174,11 +174,11 @@
 			"tag": "Prints",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/15.jpg",
-			"image": "images/project/15.jpg",
+			"fullimage": "images/project/15.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "webdesign",
@@ -186,11 +186,11 @@
 			"tag": "Web Design",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/16.jpg",
-			"video": "61442808",
+			"videoid": "61442808",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		},
 		{
 			"category": "logos",
@@ -198,23 +198,11 @@
 			"tag": "Logo",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/17.jpg",
-			"image": "images/project/17.jpg",
+			"fullimage": "images/project/17.jpg",
 			"date": "9/2/2013",
-			"client": "Client Name",
+			"clientname": "Client Name",
 			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
-		},
-		{
-			"category": "character",
-			"title": "Project 18",
-			"tag": "Character",
-			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
-			"thumbnail": "images/thumbnail/18.jpg",
-			"video": "61442808",
-			"date": "9/2/2013",
-			"client": "Client Name",
-			"skills": "HTML / Javascript",
-			"url": "http://www.thelisapark.com"
+			"clienturl": "http://www.thelisapark.com"
 		}
 	]
 }

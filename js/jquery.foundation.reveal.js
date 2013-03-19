@@ -449,7 +449,7 @@
 
       function openVideos() {
         var video = modal.find('.flex-video'),
-            iframe = video.find('iframe');
+            iframe = modal.find('iframe');
         if (iframe.length > 0) {
           iframe.attr("src", iframe.data("src"));
           video.fadeIn(100);
@@ -681,7 +681,7 @@
 
       function closeVideos() {
         var video = modal.find('.flex-video'),
-            iframe = video.find('iframe');
+            iframe = modal.find('iframe');
         if (iframe.length > 0) {
           iframe.data("src", iframe.attr("src"));
           iframe.attr("src", "");

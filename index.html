@@ -84,7 +84,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <!-- Intro Video wrap start -->
 <div id="intro" class="section">
 	<div class="videoPlaceholder">
-		<iframe src="http://player.vimeo.com/video/58863266?autoplay=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<iframe id="intro-video" src="http://player.vimeo.com/video/58863266?autoplay=1?api=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</div>
 </div>
 
@@ -650,34 +650,6 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 </div>
 <!-- Footer copyright end -->
 
-<!-- Modal Section - Portfolio -->
-<div id="folio1" class="reveal-modal xlarge">
-<div class="portfolio-content">
-	<h3>Some Project Title Here</h3>
-	<div class="portfolio-fullimg">
-		<img src="demo/inner/5.jpg" alt="" />
-	</div>
-	<div class="space30"></div>
-
-	<div class="row">
-		<div class="eight columns">
-			<p>Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique. Aenean in elementum eros. Vivamus et elit dolor, at eleifend nunc. Vestibulum sodales dignissim libero varius pharetra. Aliquam imperdiet turpis non magna adipiscing malesuada. Fusce consectetur euismod nibh, eu dictum velit dictum sed. Ut vestibulum tincidunt enim eu lobortis. Vivamus malesuada blandit magna, id fermentum risus dignissim sed. In mollis arcu ac eros dignissim consequat. Sed eget nibh nec neque hendrerit tristique nec ac diam. Aenean ac urna felis, ac dictum metus. In fringilla pellentesque enim et dapibus. Mauris in felis sem, in vestibulum libero. Aenean non mauris ut ante convallis posuere.</p>
-		</div>
-
-		<div class="four columns">
-			<ul class="portfolio-meta">
-				<li><span>Date:</span><div class="meta-list">09th Feb 2013</div></li>
-				<li><span>Client:</span><div class="meta-list">Client Name</div></li>
-				<li><span>Skills Used: </span><div class="meta-list"><a href="#">HTML</a> / <a href="#">Javascript</a><br></div></li>
-				<li><span>Category: </span><div class="meta-list"><a href="#">Website</a> / <a href="#">Corporate</a><br></div></li>
-				<li><span>Client url: </span><div class="meta-list"><a href="http://www.dkpixels.com">http://www.clienturl.com</a></div></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<a class="close-reveal-modal"><img src="images/close.png" alt=""/></a>
-</div>
-
 <!-- Modal Section - Blog -->
 <div id="blogpost1" class="reveal-modal xlarge">
 <div class="portfolio-content">
@@ -706,11 +678,18 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 </div>
 <!-- Main wrap End -->
 
+<!-- folio overlay wrapper -->
+<div id="overlay-wrapper">
+	<!-- insert dynamically created overlays here -->
+	<!-- structure: overlay template -->
+</div>
+
+<!-- hidden wrapper -->
 <div id="hidden-wrapper">
 	<!-- thumbnail template -->
 	<div id="thumbnail-template">
 		<li class="{numcols} columns resize" data-id="id-{id}" data-type="{category}">
-			<a href="#" data-reveal-id="folio1">
+			<a href="#" data-reveal-id="folio{folioid}">
 				<div class="portfolio_thumb"><img src="images/thumbnail/placeholder.jpg" alt="" />
 					<span class="portfolio-inner" >
 						<span class="zoom-inner">
@@ -721,6 +700,36 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 				</div>
 			</a>
 		</li> 
+	</div>
+	<!-- overlay template -->
+	<div id="overlay-template">
+		<div id="folio{folioid}" class="reveal-modal xlarge">
+			<div class="portfolio-content">
+				<h3>{title}</h3>
+				<div class="portfolio-fullimg">
+					<img class="portfolioImage" src="images/project/placeholder.jpg" alt="" />
+					<iframe class="portfolioVideo" src="http://player.vimeo.com/video/{videoid}" width="100%" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="space30"></div>
+
+				<div class="row">
+					<div class="eight columns">
+						<p>{description}</p>
+					</div>
+
+					<div class="four columns">
+						<ul class="portfolio-meta">
+							<li><span>Date:</span><div class="meta-list">{date}</div></li>
+							<li><span>Client:</span><div class="meta-list">{clientname}</div></li>
+							<li><span>Skills Used: </span><div class="meta-list">{skills}</div></li>
+							<li><span>Category: </span><div class="meta-list">{category}</div></li>
+							<li><span>Client url: </span><div class="meta-list"><a href="{clienturl}">{clienturl}</a></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a class="close-reveal-modal"><img src="images/close.png" alt=""/></a>
+		</div>
 	</div>
 </div>
 

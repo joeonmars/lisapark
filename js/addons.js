@@ -1,6 +1,46 @@
 var header;
 var introSection;
+var introVideo;
 var videoMinRatio = 1024/768;
+var isIntroVideoPaused = true;
+
+// Helper function for sending a message to the vimeo player
+function post(action, value) {
+  var data = { method: action };
+  
+  if (value) {
+  	data.value = value;
+  }
+  
+  var url = introVideo.attr('src').split('?')[0];
+
+  introVideo[0].contentWindow.postMessage(JSON.stringify(data), url);
+};
+
+
+// Handle messages received from the player
+function onMessageReceived(e) {
+  var data = JSON.parse(e.data);
+  
+  switch (data.event) {
+    case 'play':
+    	isIntroVideoPaused = false;
+      break;
+       
+    case 'pause':
+    case 'finish':
+      isIntroVideoPaused = true;
+      break;
+  }
+}
+
+// Listen for messages from the intro vimeo player
+if (window.addEventListener){
+	window.addEventListener('message', onMessageReceived, false);
+}else {
+	window.attachEvent('onmessage', onMessageReceived, false);
+}
+
 
 // a global resize handler
 $(window).resize(function() {
@@ -14,10 +54,20 @@ $(window).resize(function() {
 });
 
 
+$(window).scroll(function(e) {
+	if(!isIntroVideoPaused) {
+		if($(window).scrollTop() > $(introSection).height()) {
+			post('pause');
+		}
+	}
+});
+
+
 $(document).ready(function() {
   // store dom references
   header = $('.header')[0];
   introSection = $('#intro');
+  introVideo = $('#intro-video');
 
   // auto trigger resize when document is ready
   $(window).trigger('resize');
@@ -44,6 +94,7 @@ $(document).ready(function() {
 
 
 function createPortfolio(assetResult) {
+	// create thumbnails
 	var portfolios = assetResult['portfolio'];
 	var i;
 	var l = portfolios.length;
@@ -59,7 +110,7 @@ function createPortfolio(assetResult) {
 
 	for(i=0; i<l; ++i) {
 		var portfolio = portfolios[i];
-		var str = thumbnailTemplate.replace('{numcols}', cols[i%cols.length]).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
+		var str = thumbnailTemplate.replace('{numcols}', cols[i%cols.length]).replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
 		var el = $(str);
 		$(portfolioContainer).append(el);
 	}
@@ -95,4 +146,24 @@ function createPortfolio(assetResult) {
 		// Prevent the browser jump to the link anchor
 		e.preventDefault();
 	});
+
+	// create folio overlays
+	var overlayContainer = $('#overlay-wrapper');
+	var overlayTemplate = $('#overlay-template').html().toString();
+
+	for(i=0; i<l; ++i) {
+		var portfolio = portfolios[i];
+		var imageUrl = portfolio['fullimage'];
+		var videoId = portfolio['videoid'];
+		var str = overlayTemplate.replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{clientname}', portfolio['clientname']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['category']).replace(/{clienturl}/g, portfolio['clienturl']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
+		var el = $(str);
+		$(overlayContainer).append(el);
+
+		if(!imageUrl) {
+			$('#folio'+(i+1)+' .portfolioImage').hide();
+		}
+		if(!videoId) {
+			$('#folio'+(i+1)+' .portfolioVideo').hide();
+		}
+	}
 };
