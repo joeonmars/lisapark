@@ -453,6 +453,7 @@
         if (iframe.length > 0) {
           iframe.attr("src", iframe.data("src"));
           video.fadeIn(100);
+          $(window).resize();
         }
       }
 
