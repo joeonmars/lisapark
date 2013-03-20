@@ -1,16 +1,14 @@
 {
 	"portfolio": [
 		{
-			"category": "installation",
+			"category": "interactive",
 			"title": "Project 01",
-			"tag": "Installation",
+			"tag": "interactive",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/1.jpg",
 			"fullimage": "images/project/1.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
 			"category": "photography",
@@ -20,45 +18,37 @@
 			"thumbnail": "images/thumbnail/2.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 03",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/3.jpg",
 			"fullimage": "images/project/3.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 04",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/4.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "installation",
+			"category": "interactive",
 			"title": "Project 05",
-			"tag": "Installation",
+			"tag": "interactive",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/5.jpg",
 			"fullimage": "images/project/5.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
 			"category": "photography",
@@ -68,21 +58,17 @@
 			"thumbnail": "images/thumbnail/6.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 07",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/7.jpg",
 			"fullimage": "images/project/7.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
 			"category": "photography",
@@ -92,93 +78,77 @@
 			"thumbnail": "images/thumbnail/8.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "installation",
+			"category": "interactive",
 			"title": "Project 09",
-			"tag": "Installation",
+			"tag": "interactive",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/9.jpg",
 			"fullimage": "images/project/9.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 10",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/10.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 11",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/11.jpg",
 			"fullimage": "images/project/11.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "performance",
 			"title": "Project 12",
-			"tag": "films",
+			"tag": "performance",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/12.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "installation",
+			"category": "painting",
 			"title": "Project 13",
-			"tag": "Installation",
+			"tag": "painting",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/13.jpg",
 			"fullimage": "images/project/13.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "photography",
+			"category": "painting",
 			"title": "Project 14",
-			"tag": "Photography",
+			"tag": "painting",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/14.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "films",
+			"category": "painting",
 			"title": "Project 15",
-			"tag": "films",
+			"tag": "painting",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/15.jpg",
 			"fullimage": "images/project/15.jpg",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		},
 		{
 			"category": "photography",
@@ -188,21 +158,7 @@
 			"thumbnail": "images/thumbnail/16.jpg",
 			"videoid": "61442808",
 			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
-		},
-		{
-			"category": "installation",
-			"title": "Project 17",
-			"tag": "Installation",
-			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
-			"thumbnail": "images/thumbnail/17.jpg",
-			"fullimage": "images/project/17.jpg",
-			"date": "9/2/2013",
-			"clientname": "Client Name",
-			"skills": "HTML / Javascript",
-			"clienturl": "http://www.thelisapark.com"
+			"skills": "HTML / Javascript"
 		}
 	]
 }

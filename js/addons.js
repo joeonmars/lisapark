@@ -170,7 +170,7 @@ function createPortfolio(assetResult) {
 		var portfolio = portfolios[i];
 		var imageUrl = portfolio['fullimage'];
 		var videoId = portfolio['videoid'];
-		var str = overlayTemplate.replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{clientname}', portfolio['clientname']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['category']).replace(/{clienturl}/g, portfolio['clienturl']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
+		var str = overlayTemplate.replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['category']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
 		var el = $(str);
 		$(overlayContainer).append(el);
 

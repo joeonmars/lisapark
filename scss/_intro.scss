@@ -6,7 +6,7 @@
 	//display:none;
 	width: 100%;
 	height: 20%;
-	background-image: url("../images/ajax-loader.gif");
+	background-image: url("../images/ajax-loader-white.gif");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: black;
@@ -39,4 +39,10 @@
 .portfolio-content{
 	max-width: 1040px;
 	margin: 0 auto;
+}
+
+.portfolio-fullimg{
+	background-image: url("../images/ajax-loader-black.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
 }

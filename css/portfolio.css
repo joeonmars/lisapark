@@ -15,8 +15,7 @@ padding:2px 0;
 .filter li {
 	float: left;
 	padding: 2px 0px;
-	margin-left:1px;
-	margin-bottom:2px;
+	border: 1px solid #181818;
 	background:#282828;
 }
 

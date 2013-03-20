@@ -20,3 +20,11 @@ body{
 #hidden-wrapper{
 	display: none;
 }
+
+#portfolio{
+	padding-top: 10px !important;
+
+	h3, p{
+		display: none;
+	}
+}

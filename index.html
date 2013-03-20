@@ -5,7 +5,7 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<meta name="viewport" content="width=device-width">
 	
-	<title>Carnival - Single Page Responsive Portfolio Template</title>
+	<title>LISA PARK</title>
 	
 	<!-- This file is part of a site template for sale at themeforest.net.
          See: http://themeforest.net/user/Dilipkumar
@@ -53,7 +53,7 @@
 <style>
 .zoom-inner {display:none;}
 .portfolio-inner:hover .zoom-inner {display:block !important;}
-span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center center #e3007b;}
+span.portfolio-inner {background:#e3007b;}
 </style>
 <![endif]-->
 
@@ -84,7 +84,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <!-- Intro Video wrap start -->
 <div id="intro" class="section">
 	<div class="videoPlaceholder">
-		<iframe id="intro-video" src="http://player.vimeo.com/video/58863266?autoplay=1&api=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<iframe id="intro-video" src="http://player.vimeo.com/video/58863266?autoplay=1&amp;api=1&amp;player_id=intro-video" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</div>
 </div>
 
@@ -154,7 +154,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <div id="portfolio" class="section">
 	<div class="row">
 		<div class="content-title-wrap1">
-			<h3>Our <span>Works</span></h3>
+			<h3>My <span>Works</span></h3>
 			<p>Check our works to libero vel suscipit facilisis turpis nunc ullamcorper libero quis vestibulum enim ipsum in nisli luctus vel elementum eu varius eget anted laoreet viverra ante sit amet tincidunt</p>
 		</div>
 		<div class="space50"></div>
@@ -164,8 +164,9 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 			<div class="filter-wrap">
 				<ul class="filter"> 
 					<li class="all currents"><a href="#">All</a></li>
-					<li class="films"><a href="#">Films</a></li> 
-					<li class="installation"><a href="#">Installation</a></li> 
+					<li class="interactive"><a href="#">Interactive</a></li>
+					<li class="painting"><a href="#">Painting</a></li>
+					<li class="performance"><a href="#">Performance</a></li>
 					<li class="photography"><a href="#">Photography</a></li>
 				</ul> 
 			</div>
@@ -467,8 +468,6 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 
 <div class="clear"></div>
 
-<div class="clear"></div>
-
 <!-- Milestones content Start -->
 <!--
 <div id="milestones" class="section">
@@ -697,7 +696,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 					<span class="portfolio-inner" >
 						<span class="zoom-inner">
 							<span class="overlay title">{title}</span>
-							<span class="overlay-tag">{tag}</span>
+							<!--<span class="overlay-tag">{tag}</span>-->
 						</span>
 					</span>
 				</div>
@@ -723,10 +722,8 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 					<div class="four columns">
 						<ul class="portfolio-meta">
 							<li><span>Date:</span><div class="meta-list">{date}</div></li>
-							<li><span>Client:</span><div class="meta-list">{clientname}</div></li>
 							<li><span>Skills Used: </span><div class="meta-list">{skills}</div></li>
 							<li><span>Category: </span><div class="meta-list">{category}</div></li>
-							<li><span>Client url: </span><div class="meta-list"><a href="{clienturl}">{clienturl}</a></div></li>
 						</ul>
 					</div>
 				</div>
@@ -742,7 +739,6 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <script type="text/javascript">
 $(document).ready(function() {
   $('.navigation').onePageNav();
-  
 });
 </script>
 
