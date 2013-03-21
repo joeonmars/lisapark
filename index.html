@@ -35,6 +35,7 @@
 	<script type="text/javascript" src="js/jquery.quicksand.js"></script> 
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/jquery.foundation.reveal.js"></script>
+	<script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
 	<script type="text/javascript" src="js/contact.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="js/addons.js"></script>
@@ -691,7 +692,7 @@ span.portfolio-inner {background:#e3007b;}
 	<!-- thumbnail template -->
 	<div id="thumbnail-template">
 		<li class="{numcols} columns resize" data-id="id-{id}" data-type="{category}">
-			<a href="#" data-reveal-id="folio{folioid}">
+			<a href="#" data-reveal-id="{folioid}">
 				<div class="portfolio_thumb"><img src="images/thumbnail/placeholder.jpg" alt="" />
 					<span class="portfolio-inner" >
 						<span class="zoom-inner">
@@ -705,7 +706,7 @@ span.portfolio-inner {background:#e3007b;}
 	</div>
 	<!-- overlay template -->
 	<div id="overlay-template">
-		<div id="folio{folioid}" class="reveal-modal xlarge">
+		<div id="{folioid}" class="reveal-modal xlarge">
 			<div class="portfolio-content">
 				<h3>{title}</h3>
 				<div class="portfolio-fullimg">

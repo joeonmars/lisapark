@@ -56,6 +56,16 @@ if (window.addEventListener){
 	window.attachEvent('onmessage', onMessageReceived, false);
 }
 
+// hash event handler
+$(window).hashchange( function(){
+  var hash = location.hash;
+  
+  var strs = hash.replace( /^#/, '' ).split('/');
+
+  if(strs.length == 1) {
+  	$('#'+strs[0]).reveal();
+  }
+})
 
 // a global resize handler
 $(window).resize(function() {
@@ -95,6 +105,7 @@ $(document).ready(function() {
     var assetResult = e.result;
     if(assetId === 'portfolio') {
     	createPortfolio(assetResult);
+    	$(window).hashchange();
     }
   };
 
@@ -125,7 +136,7 @@ function createPortfolio(assetResult) {
 
 	for(i=0; i<l; ++i) {
 		var portfolio = portfolios[i];
-		var str = thumbnailTemplate.replace('{numcols}', 'three'/*cols[i%cols.length]*/).replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
+		var str = thumbnailTemplate.replace('{numcols}', 'three'/*cols[i%cols.length]*/).replace('{folioid}', portfolio['id']).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
 		var el = $(str);
 		$(portfolioContainer).append(el);
 	}
@@ -170,15 +181,16 @@ function createPortfolio(assetResult) {
 		var portfolio = portfolios[i];
 		var imageUrl = portfolio['fullimage'];
 		var videoId = portfolio['videoid'];
-		var str = overlayTemplate.replace('{folioid}', i+1).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['category']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
+		var folioId = portfolio['id'];
+		var str = overlayTemplate.replace('{folioid}', folioId).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['category']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
 		var el = $(str);
 		$(overlayContainer).append(el);
 
 		if(!imageUrl) {
-			$('#folio'+(i+1)+' .portfolioImage').hide();
+			$('#'+folioId+' .portfolioImage').hide();
 		}
 		if(!videoId) {
-			$('#folio'+(i+1)+' .portfolioVideo').hide();
+			$('#'+folioId+' .portfolioVideo').hide();
 		}
 	}
 
