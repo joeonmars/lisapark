@@ -35,6 +35,11 @@ function onMessageReceived(e) {
     case 'play':
     	//console.log('VIMEO PLAY!');
     	isIntroVideoPaused = false;
+
+    	// if an overlay is currently open, pause the video immediately from auto play
+    	if($('.reveal-modal.xlarge.open').length > 0) {
+    		post('pause');
+    	}
       break;
        
     case 'pause':
@@ -63,7 +68,14 @@ $(window).hashchange( function(){
   var strs = hash.replace( /^#/, '' ).split('/');
 
   if(strs.length == 1) {
-  	$('#'+strs[0]).reveal();
+  	var folioId = '#'+strs[0];
+  	if($(folioId).length > 0) {
+	  	// pause intro video if overlay opens
+	  	if(!isIntroVideoPaused && isIntroReady) {
+	  		post('pause');
+	  	}
+	  	$(folioId).reveal();
+  	}
   }
 })
 
