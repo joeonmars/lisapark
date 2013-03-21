@@ -77,7 +77,7 @@ p {
 /*-----------------------------------------------------------------------------------*/
 
 .cover {background:url(../images/overlay.png);height:100%;width:100%;}
-#home { background:#242424 url(../demo/top.jpg) no-repeat;background-size:cover;}
+#home { background:#242424 url(../demo/top.jpg) no-repeat center;background-size:cover;}
 #services   { background:#fff;padding:80px 0 65px 0;position:relative;}
 #portfolio  { background:#181818;padding:80px 0;position:relative;}
 #works      { background:#fff;padding:80px 0;position:relative;}
