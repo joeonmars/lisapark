@@ -22,7 +22,7 @@
     //
     // Prevent default action of the event.
     //
-    event.preventDefault();
+    //event.preventDefault();
     //
     // Get the clicked anchor data-reveal-id attribute value.
     //
@@ -311,6 +311,8 @@
             // Set the css options.
             //
             modal.css( cssOpts.open );
+            modal.css('left', '-100%');
+            modal.css('top', $doc.scrollTop() + topMeasure + 'px');
             //
             // Fade in the background element, at half the speed of the modal element.
             // So, faster than the modal element.
@@ -325,11 +327,12 @@
             //
             // Animate the following css properties.
             //
+
             .animate( {
               //
               // Set the 'top' property to the document scroll plus the calculated top measure.
               //
-              "top": $doc.scrollTop() + topMeasure + 'px',
+              "left": '0%',
               //
               // Set it to full opacity.
               //
@@ -496,7 +499,8 @@
               //
               // Set the top property to the document scrollTop minus calculated topOffset.
               //
-              "top":  $doc.scrollTop() - topOffset + 'px',
+              //"top":  $doc.scrollTop() - topOffset + 'px',
+              "left": "-100%",
               //
               // Fade the modal out, by using the opacity property.
               //
