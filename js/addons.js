@@ -227,6 +227,9 @@ function createPortfolio(assetResult) {
 		var videoWidth = Math.min(1040, overlay.width());
 		video.attr('height', videoWidth / (16/9) + 'px');
 
-		overlay.css('min-height', $(window).height() - $('.header').height());
+		var overlayMinHeight = $(window).height() - $('.header').height();
+		var portfolioImages = overlay.find('.portfolioImage');
+		portfolioImages.css('max-height', overlayMinHeight - 200);
+		overlay.css('min-height', overlayMinHeight);
 	});
 };

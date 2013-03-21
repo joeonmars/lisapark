@@ -78,3 +78,6 @@ body.noScroll {
 #portfolio h3, #portfolio p {
   display: none;
 }
+#portfolio > .row {
+  width: 100%;
+}
