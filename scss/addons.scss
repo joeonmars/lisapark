@@ -7,6 +7,13 @@ $icon-layout:smart;
 
 @import "intro";
 
+*{
+  outline: none;
+  outline-style: none;
+  -webkit-touch-callout: none;              /* disable callout, image save panel */
+  -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+}
+
 body{
 	min-width: 320px;
 	min-height: 320px;
@@ -19,6 +26,12 @@ body{
 
 textarea{
 	resize: none;
+}
+
+[data-icon]:before {
+  font-family: "Entypo";
+  content: attr(data-icon);
+  speak: none;
 }
 
 #hidden-wrapper{
@@ -34,5 +47,38 @@ textarea{
 
 	>.row{
 		width: 100%;
+	}
+}
+
+.page-nav{
+	@include user-select('none');
+
+	>.lArrow, >.rArrow{
+		display: inline-block;
+		vertical-align: middle;
+		color: black;
+		font-size: 48px;
+		cursor: pointer;
+		-moz-transition: color .1s;
+		-webkit-transition: color .1s;
+		-o-transition: color .1s;
+		transition: color .1s;
+
+		&:hover{
+			color: #e3007b;
+		}
+	}
+
+	>p{
+		display: inline-block;
+		vertical-align: middle;
+		color: black;
+		font-family: "Open Sans", sans-serif;
+		text-transform: italic;
+		font-size: 18px;
+		margin: 0;
+		padding-top: 4px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

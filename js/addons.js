@@ -208,15 +208,35 @@ function createPortfolio(assetResult) {
 		var imageUrl = portfolio['fullimage'];
 		var videoId = portfolio['videoid'];
 		var folioId = portfolio['id'];
-		var str = overlayTemplate.replace('{folioid}', folioId).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['tag']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', portfolio['fullimage'] || '');
+		var hasMultipleImages = $.isArray(portfolio['fullimage']);
+		var firstFullImageUrl = ((hasMultipleImages === true) ? portfolio['fullimage'][0] : portfolio['fullimage']);
+		var str = overlayTemplate.replace('{folioid}', folioId).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['tag']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', firstFullImageUrl || '');
 		var el = $(str);
 		$(overlayContainer).append(el);
 
+		// hide video or full image if either one does not exist
 		if(!imageUrl) {
 			$('#'+folioId+' .portfolioImage').hide();
 		}
 		if(!videoId) {
 			$('#'+folioId+' .portfolioVideo').hide();
+		}
+
+		// hide nav arrows if does not have multiple full images
+		var nav = el.find('.page-nav');
+		if(!hasMultipleImages) {
+			nav.hide();
+		}else {
+			var lArrow = nav.find('.lArrow');
+			var rArrow = nav.find('.rArrow');
+			var text = nav.find('p');
+			text.html('1 / '+portfolio['fullimage'].length);
+			lArrow.click(function() {
+
+			});
+			rArrow.click(function() {
+
+			});
 		}
 	}
 

@@ -84,7 +84,13 @@
 			"tag": "Performance",
 			"description": "“Life of Ms. Flora” is a decorated floral object that is personified into a human being. Ms. Flora is narcissistic who likes to wear beautiful clothes and spend times watching herself in a mirror. She looks gorgeous and seems to have everything in her own world but in reality, she is isolated.",
 			"thumbnail": "images/thumbnail/1.jpg",
-			"fullimage": "images/project/1.jpg",
+			"fullimage": [
+				"images/project/life-of-ms-flora/1.jpg",
+				"images/project/life-of-ms-flora/2.jpg",
+				"images/project/life-of-ms-flora/3.jpg",
+				"images/project/life-of-ms-flora/4.jpg",
+				"images/project/life-of-ms-flora/5.jpg"
+				],
 			"date": "2010",
 			"skills": "HTML / Javascript"
 		},
