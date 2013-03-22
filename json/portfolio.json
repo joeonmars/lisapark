@@ -4,7 +4,7 @@
 			"category": "interactive-i",
 			"id": "le-violon-d-lisa",
 			"title": "Le violon d'lisa",
-			"tag": "Interactive-II",
+			"tag": "Interactive I",
 			"description": "Inspired by Manray's photograph, I'm using my body as an instrument to recreate “Le Violon d'Ingres” into a performance. A nichrome wire attached on a cello bow creates sound when it touches a performer's body by calibrating the data into a melody. Since body is conductive, skin becomes a new interfaces for musical expression.",
 			"thumbnail": "images/thumbnail/2.jpg",
 			"videoid": "58863266",
@@ -12,10 +12,10 @@
 			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "interactive-ii",
+			"category": "interactive-i",
 			"id": "obsession-is-sad-passion",
 			"title": "Obsession is sad passion",
-			"tag": "Interactive-II",
+			"tag": "Interactive I",
 			"description": "For this project, I'm using heart rate sensor(Polar wear link & transmitter). When my heart rate goes faster, a pitch of the sound will begin to go down and speed will start to slow down. The sound is a narration of the story of a young artist who has a tragic end because of the amount of pressure she received from the people. The story is called Depth Wish written by Patrick Suskind’s (the author of ‘Perfume’) “Three stories and a reflection”. I read this book when I was 18 and it was very memorable. I recorded my voice in both Korean and English and this will be played as performance begins.",
 			"thumbnail": "images/thumbnail/6.jpg",
 			"videoid": "61442808",
@@ -45,10 +45,10 @@
 			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "installation",
+			"category": "photofilm",
 			"id": "untitled",
 			"title": "Untitled",
-			"tag": "Installation",
+			"tag": "Photo/Film",
 			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
 			"thumbnail": "images/thumbnail/untitled.jpg",
 			"fullimage": "images/project/untitled.jpg",
@@ -56,10 +56,10 @@
 			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
 		},
 		{
-			"category": "installation",
+			"category": "photofilm",
 			"id": "untitled-ii",
 			"title": "Untitled II",
-			"tag": "Installation",
+			"tag": "Photo/Film",
 			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
 			"thumbnail": "images/thumbnail/untitled2.jpg",
 			"fullimage": "images/project/untitled2.jpg",
@@ -144,10 +144,10 @@
 			"skills": "wood, steel door knob, ivory paint/ hologram papers, child mannequin, spangle embroidery fabric"
 		},
 		{
-			"category": "photofilm",
+			"category": "performance",
 			"id": "project-17",
 			"title": "Project-17",
-			"tag": "Photo/Film",
+			"tag": "Performance",
 			"description": "Lorem Ipsum...",
 			"thumbnail": "images/thumbnail/17.jpg",
 			"fullimage": "images/project/17.jpg",
@@ -155,10 +155,10 @@
 			"skills": "HTML / Javascript"
 		},
 		{
-			"category": "photofilm",
+			"category": "installation",
 			"id": "project-18",
 			"title": "Project-18",
-			"tag": "Photo/Film",
+			"tag": "Installation",
 			"description": "Lorem Ipsum...",
 			"thumbnail": "images/thumbnail/18.jpg",
 			"fullimage": "images/project/18.jpg",
@@ -177,10 +177,10 @@
 			"skills": "silkscreen, wood panel, paint, resin, plexiglass"
 		},
 		{
-			"category": "interactive-i",
+			"category": "interactive-ii",
 			"id": "i-wish-i-said-hello",
 			"title": "I wish I said hello",
-			"tag": "Interactive-I",
+			"tag": "Interactive II",
 			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
 			"thumbnail": "images/thumbnail/5.jpg",
 			"fullimage": "images/project/5.jpg",

@@ -79,12 +79,12 @@ p {
 .cover {background:url(../images/overlay.png);height:100%;width:100%;}
 #home { background:#242424 url(../demo/top.jpg) no-repeat center;background-size:cover;}
 #services   { background:#fff;padding:80px 0 65px 0;position:relative;}
-#portfolio  { background:#181818;padding:80px 0;position:relative;}
+#portfolio  { background:#181818;padding:80px 0;position:relative;border-top:1px dashed #444;}
 #works      { background:#fff;padding:80px 0;position:relative;}
-#about      { background:#181818;padding:100px 0;position:relative;}
-#blog       { background:#fff;padding:100px 0 75px 0;position:relative;}
-#milestones { background:#181818;padding:100px 0;position:relative;}
-#testimonials   { background:#fff;padding:100px 0;position:relative;}
+#about      { background:#181818;padding:80px 0;position:relative;border-top:1px dashed #444;}
+#blog       { background:#fff;padding:80px 0 75px 0;position:relative;}
+#milestones { background:#181818;padding:80px 0;position:relative;}
+#testimonials   { background:#fff;padding:80px 0;position:relative;}
 #contact    { background:#181818;position:relative;}
 
 
@@ -269,7 +269,7 @@ p {
 	text-align:center;
 	margin:0px 0px 40px 0px;
 	color:#fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .content-title-wrap1 span {
@@ -325,11 +325,10 @@ p {
 .title{
 	top: 0;
 	font-size:12px;
-	font-weight:300;
 	line-height:normal;
 	color:#fff;
 	padding:10px;
-	font-family: "Oswald",Arial;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -548,10 +547,9 @@ p {
 }
 
 
-.team-detail .resume {
+#about .resume {
 	display: block;
 	margin: 0 auto;
-	margin-top: 15px;
 	width: 230px;
 	text-align:center;
 	text-transform: uppercase;
@@ -566,13 +564,13 @@ p {
 	transition: background-color .2s;
 }
 
-.team-detail .resume span{
+#about .resume span{
 	font-size: 28px;
 	font-family: "Entypo";
 	margin-right: 5px;
 }
 
-.team-detail .resume:hover {
+#about .resume:hover {
 	background-color: black;
 }
 
@@ -819,10 +817,10 @@ input[type="submit"], input[type="button"] {
 	font-size: 15px;
 	line-height: 1em;
 	-webkit-appearance: none;
-	-moz-transition: opacity .5s;
-	-webkit-transition: opacity .5s;
-	-o-transition: opacity .5s;
-	transition: opacity .5s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
 	text-transform:uppercase;
 	border:none;
 	font-weight:400;
@@ -907,6 +905,7 @@ span.ico {
 	background:#fff;
 	padding:35px 0 15px;
 	color:#181818;
+	text-align: center
 }
 
 .copyright p{
