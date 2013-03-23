@@ -264,7 +264,7 @@ p {
 
 .content-title-wrap1 h3 {
 	font-size:65px;
-	font-weight:700;
+	/*font-weight:700;*/
 	text-transform:uppercase;
 	text-align:center;
 	margin:0px 0px 40px 0px;
