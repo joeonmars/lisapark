@@ -106,6 +106,8 @@ textarea {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
 }
 .portfolioImage.prev {
   opacity: 0;
@@ -122,6 +124,11 @@ textarea {
   -ms-transform: perspective(4000) rotateY(15deg);
   -o-transform: perspective(4000) rotateY(15deg);
   transform: perspective(4000) rotateY(15deg);
+}
+.portfolioImage.enlarged {
+  max-height: 100% !important;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
 }
 
 .page-nav {

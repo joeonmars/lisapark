@@ -233,6 +233,23 @@ function createPortfolio(assetResult) {
 			$('#'+folioId+' .portfolioVideo').hide();
 		}
 
+		if(imageUrl) {
+			(function() {
+				// add click listener to image to zoom in/out
+				var isEnlarged = false;
+				var projectId = portfolio['id'];
+				var img = $('#'+projectId+' .portfolioImage');
+				img.click(function() {
+					isEnlarged = !isEnlarged;
+					if(isEnlarged === true) {
+						img.addClass('enlarged');
+					}else {
+						img.removeClass('enlarged');
+					}
+				})
+			})();
+		}
+
 		// hide nav arrows if does not have multiple full images
 		var nav = el.find('.page-nav');
 		if(!hasMultipleImages) {

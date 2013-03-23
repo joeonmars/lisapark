@@ -55,6 +55,8 @@ textarea{
 
 .portfolioImage{
 	@include single-transition(all, .5s, ease-out);
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
 
 	&.prev{
 		opacity: 0;
@@ -64,6 +66,12 @@ textarea{
 	&.next{
 		opacity: 0;
 		@include rotateY(15deg, 4000);
+	}
+
+	&.enlarged{
+		max-height: 100% !important;
+		cursor: -webkit-zoom-out;
+		cursor: -moz-zoom-out;
 	}
 }
 
