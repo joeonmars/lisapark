@@ -29,7 +29,16 @@
 			"tag": "Performance",
 			"description": "Inspired by Franz Kafka’s Metamorphosis, I created an outfit by using coffee filters because of their resemblance of shell-like shapes. The main character of Metamorphosis, Gregor wakes up in the morning and discovers him transformed into a monstrous insect. Discriminated by his family, isolated from people and reality, Gregor loses his identity as a human.",
 			"thumbnail": "images/thumbnail/3.jpg",
-			"fullimage": "images/project/3.jpg",
+			"fullimage": [
+				"images/project/metamorphosis-i/1.jpg",
+				"images/project/metamorphosis-i/2.jpg",
+				"images/project/metamorphosis-i/3.jpg",
+				"images/project/metamorphosis-i/4.jpg",
+				"images/project/metamorphosis-i/5.jpg",
+				"images/project/metamorphosis-i/6.jpg",
+				"images/project/metamorphosis-i/7.jpg",
+				"images/project/metamorphosis-i/8.jpg"
+				],
 			"date": "2010",
 			"skills": "HTML / Javascript"
 		},
@@ -40,7 +49,16 @@
 			"tag": "Performance",
 			"description": "Inspired by Franz Kafka’s Metamorphosis, I created an outfit by using coffee filters because of their resemblance of shell-like shapes. The main character of Metamorphosis, Gregor wakes up in the morning and discovers him transformed into a monstrous insect. Discriminated by his family, isolated from people and reality, Gregor loses his identity as a human.",
 			"thumbnail": "images/thumbnail/4.jpg",
-			"fullimage": "images/project/4.jpg",
+			"fullimage": [
+				"images/project/metamorphosis-ii/1.jpg",
+				"images/project/metamorphosis-ii/2.jpg",
+				"images/project/metamorphosis-ii/3.jpg",
+				"images/project/metamorphosis-ii/4.jpg",
+				"images/project/metamorphosis-ii/5.jpg",
+				"images/project/metamorphosis-ii/6.jpg",
+				"images/project/metamorphosis-ii/7.jpg",
+				"images/project/metamorphosis-ii/8.jpg"
+				],
 			"date": "2010",
 			"skills": "HTML / Javascript"
 		},
@@ -51,7 +69,10 @@
 			"tag": "Photo/Film",
 			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
 			"thumbnail": "images/thumbnail/untitled.jpg",
-			"fullimage": "images/project/untitled.jpg",
+			"fullimage": [
+				"images/project/untitled/1.jpg",
+				"images/project/untitled/2.jpg"
+				],
 			"date": "9/2/2013",
 			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
 		},
@@ -62,7 +83,16 @@
 			"tag": "Photo/Film",
 			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
 			"thumbnail": "images/thumbnail/untitled2.jpg",
-			"fullimage": "images/project/untitled2.jpg",
+			"fullimage": [
+				"images/project/untitled-ii/1.jpg",
+				"images/project/untitled-ii/2.jpg",
+				"images/project/untitled-ii/3.jpg",
+				"images/project/untitled-ii/4.jpg",
+				"images/project/untitled-ii/5.jpg",
+				"images/project/untitled-ii/6.jpg",
+				"images/project/untitled-ii/7.jpg",
+				"images/project/untitled-ii/8.jpg"
+				],
 			"date": "9/2/2013",
 			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
 		},
@@ -101,7 +131,16 @@
 			"tag": "Installation",
 			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
 			"thumbnail": "images/thumbnail/7.jpg",
-			"fullimage": "images/project/7.jpg",
+			"fullimage": [
+				"images/project/when-hope-is-not-enough/1.jpg",
+				"images/project/when-hope-is-not-enough/2.jpg",
+				"images/project/when-hope-is-not-enough/3.jpg",
+				"images/project/when-hope-is-not-enough/4.jpg",
+				"images/project/when-hope-is-not-enough/5.jpg",
+				"images/project/when-hope-is-not-enough/6.jpg",
+				"images/project/when-hope-is-not-enough/7.jpg",
+				"images/project/when-hope-is-not-enough/8.jpg"
+				],
 			"date": "9/2/2013",
 			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
 		},
@@ -112,7 +151,10 @@
 			"tag": "Installation",
 			"description": "I was walking on the street and heard a crashed sound. It was a bird being hit by a huge glass. It happened so quickly and unpredicted that I didn’t know why and how it occurred. The death of the bird somehow shocked me in terms of thinking about unpredictable life.",
 			"thumbnail": "images/thumbnail/10.jpg",
-			"fullimage": "images/project/10.jpg",
+			"fullimage": [
+				"images/project/i-didn-t-know-why-what-how/1.jpg",
+				"images/project/i-didn-t-know-why-what-how/2.jpg"
+				],
 			"date": "2010",
 			"skills": "Plaster, red ink"
 		},
@@ -123,7 +165,7 @@
 			"tag": "Photo/Film",
 			"description": "This video contains surreal elements, featuring dream-like qualities.",
 			"thumbnail": "images/thumbnail/16.jpg",
-			"videoid": "32021797",
+			"fullimage": "images/project/aries.jpg",
 			"date": "2008",
 			"skills": "HTML / Javascript"
 		},
@@ -134,7 +176,13 @@
 			"tag": "Installation",
 			"description": "I like the story of Humpty Dumpty. It’s silly but very sentimental. I find that the arrogant characteristics of Humpty Dumpty are contradictive to his instability and fragility of his body. Glued to a Barbie doll, light bulbs lose its functionality which only serves as decoration. The downfall of the light bulb doll insinuates the abrupt death of Humpty Dumpty.",
 			"thumbnail": "images/thumbnail/9.jpg",
-			"fullimage": "images/project/9.jpg",
+			"fullimage": [
+				"images/project/she-sat-on-a-wall-had-a-great-fall/1.jpg",
+				"images/project/she-sat-on-a-wall-had-a-great-fall/2.jpg",
+				"images/project/she-sat-on-a-wall-had-a-great-fall/3.jpg",
+				"images/project/she-sat-on-a-wall-had-a-great-fall/4.jpg",
+				"images/project/she-sat-on-a-wall-had-a-great-fall/5.jpg"
+				],
 			"date": "2010",
 			"skills": "light bulbs, plastic Barbie doll body"
 		},
@@ -145,7 +193,14 @@
 			"tag": "Installation",
 			"description": "Not knowing what I will be dreaming, I experience mixed feelings of excitements and anxieties when I go to bed. Dreaming is like opening a door to enter a mysterious place. Every time I visit my dreams, something/someone is waiting for me.",
 			"thumbnail": "images/thumbnail/8.jpg",
-			"fullimage": "images/project/8.jpg",
+			"fullimage": [
+				"images/project/never-let-anyone-know/1.jpg",
+				"images/project/never-let-anyone-know/2.jpg",
+				"images/project/never-let-anyone-know/3.jpg",
+				"images/project/never-let-anyone-know/4.jpg",
+				"images/project/never-let-anyone-know/5.jpg",
+				"images/project/never-let-anyone-know/6.jpg"
+				],
 			"date": "2010",
 			"skills": "wood, steel door knob, ivory paint/ hologram papers, child mannequin, spangle embroidery fabric"
 		},
@@ -178,7 +233,18 @@
 			"tag": "Painting",
 			"description": "There are many layers of information implied by looking at the documentation of a person, whether by portrait paintings or photography. I think portraiture (highly depictive enough to distinguish a person) is a reflection of the person’s identity, documenting characteristics of class, gender, age, and race. I approached the portraits in a non-realistic way by depicting a person as a disguised face image sectioned into patterns. I was heavily motivated to produce this series of paintings after four years of living in California. A sharp contrast to living in a homogenous country like Korea, California and its influences of interacting, diverse peoples has become crucial part of my art practice.",
 			"thumbnail": "images/thumbnail/14.jpg",
-			"fullimage": "images/project/14.jpg",
+			"fullimage": [
+				"images/project/face-it/1.jpg",
+				"images/project/face-it/2.jpg",
+				"images/project/face-it/3.jpg",
+				"images/project/face-it/4.jpg",
+				"images/project/face-it/5.jpg",
+				"images/project/face-it/6.jpg",
+				"images/project/face-it/7.jpg",
+				"images/project/face-it/8.jpg",
+				"images/project/face-it/9.jpg",
+				"images/project/face-it/10.jpg"
+				],
 			"date": "2009",
 			"skills": "silkscreen, wood panel, paint, resin, plexiglass"
 		},
@@ -200,7 +266,7 @@
 			"tag": "Installation",
 			"description": "Inspired by the notion of relational aesthetics, my intent was to create a space where everyone can participate and experience the moment. I chose marshmallows because I associate them with playful childhood memories through their soft texture and sweet smells. Inside a limousine, hundreds of marshmallows were installed and I had a critique with my classmates for about an hour. In the beginning, everyone was excited at creating a festive atmosphere. But being crowded with 14 people in a restricted space, the stickiness of melted marshmallows and overwhelming smells made us feel uncomfortable as time goes by.",
 			"thumbnail": "images/thumbnail/12.jpg",
-			"videoid": "61442808",
+			"fullimage": "images/project/marshmallow-limousine.jpg",
 			"date": "2009",
 			"skills": "HTML / Javascript"
 		}

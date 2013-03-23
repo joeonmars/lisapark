@@ -2,6 +2,9 @@
 $icon-sprite-dimensions: true;
 $icon-layout:smart;
 
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+
 @import "icon/*.png"; 
 @include all-icon-sprites;
 
@@ -47,6 +50,20 @@ textarea{
 
 	>.row{
 		width: 100%;
+	}
+}
+
+.portfolioImage{
+	@include single-transition(all, .5s, ease-out);
+
+	&.prev{
+		opacity: 0;
+		@include rotateY(-15deg, 4000);
+	}
+
+	&.next{
+		opacity: 0;
+		@include rotateY(15deg, 4000);
 	}
 }
 

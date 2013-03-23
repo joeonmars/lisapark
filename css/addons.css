@@ -101,6 +101,29 @@ textarea {
   width: 100%;
 }
 
+.portfolioImage {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.portfolioImage.prev {
+  opacity: 0;
+  -webkit-transform: perspective(4000) rotateY(-15deg);
+  -moz-transform: perspective(4000) rotateY(-15deg);
+  -ms-transform: perspective(4000) rotateY(-15deg);
+  -o-transform: perspective(4000) rotateY(-15deg);
+  transform: perspective(4000) rotateY(-15deg);
+}
+.portfolioImage.next {
+  opacity: 0;
+  -webkit-transform: perspective(4000) rotateY(15deg);
+  -moz-transform: perspective(4000) rotateY(15deg);
+  -ms-transform: perspective(4000) rotateY(15deg);
+  -o-transform: perspective(4000) rotateY(15deg);
+  transform: perspective(4000) rotateY(15deg);
+}
+
 .page-nav {
   -webkit-user-select: none;
   -moz-user-select: none;
