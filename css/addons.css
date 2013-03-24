@@ -87,6 +87,18 @@ textarea {
   speak: none;
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e3007b;
+}
+
 #hidden-wrapper {
   display: none;
 }
@@ -99,6 +111,10 @@ textarea {
 }
 #portfolio > .row {
   width: 100%;
+}
+
+.close-reveal-modal {
+  background-color: white;
 }
 
 .portfolioImage {
@@ -131,34 +147,43 @@ textarea {
   cursor: -moz-zoom-out;
 }
 
+.portfolio-content {
+  overflow-y: scroll;
+}
+
 .page-nav {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  margin-top: -38px;
 }
 .page-nav > .lArrow, .page-nav > .rArrow {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   color: black;
   font-size: 48px;
   cursor: pointer;
-  -moz-transition: color .1s;
-  -webkit-transition: color .1s;
-  -o-transition: color .1s;
-  transition: color .1s;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
 }
 .page-nav > .lArrow:hover, .page-nav > .rArrow:hover {
   color: #e3007b;
 }
 .page-nav > p {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   color: black;
   font-family: "Open Sans", sans-serif;
-  text-transform: italic;
-  font-size: 18px;
-  margin: 0;
-  padding-top: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.sideColumn {
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  transition: height 0.4s;
 }

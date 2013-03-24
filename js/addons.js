@@ -5,6 +5,14 @@ var videoMinRatio = 1024/768;
 var isIntroVideoPaused = false;
 var isIntroReady = false;
 
+window.enableScroll = function() {
+	$(document.body).removeClass('noScroll');
+};
+
+window.disableScroll = function() {
+	$(document.body).addClass('noScroll');
+};
+
 // Helper function for sending a message to the vimeo player
 function post(action, value) {
   var data = { method: action };
@@ -75,7 +83,18 @@ $(window).hashchange( function(){
 	  	if(!isIntroVideoPaused && isIntroReady) {
 	  		post('pause');
 	  	}
-	  	$(folioId).reveal();
+	  	$(folioId).reveal({
+	  		open: function() {
+	  			window.disableScroll();
+	  			$(folioId).trigger('overlayopen');
+	  		},
+	  		opened: function() {
+	  			$(folioId).trigger('overlayopened');
+	  		},
+	  		close: function() {
+	  			window.enableScroll();
+	  		}
+	  	});
 	  	// trigger page event
 	  	if(strs.length == 2) {
 	  		var pageId = parseInt(strs[1]) - 1;
@@ -261,17 +280,21 @@ function createPortfolio(assetResult) {
 				var numImgs = imgSrcs.length;
 				var lArrow = nav.find('.lArrow');
 				var rArrow = nav.find('.rArrow');
-				var text = nav.find('p');
+				var lPage = nav.find('.lPage');
+				var rPage = nav.find('.rPage');
 				var img = $('#'+projectId+' .portfolioImage');
 				var imgIndex = -1;
 				var timeoutId;
 				var fakeImg = $('<img>');
+				var sideColumn = $('#'+projectId+' .sideColumn');
 
 				// onload of image
 				fakeImg.load(function() {
 					window.clearTimeout(timeoutId);
 					timeoutId = window.setTimeout(function() {
 						img.attr('src', fakeImg.attr('src')).removeClass('prev next');
+						// vertical align arrows
+						eventTarget.trigger("overlayopened");
 					}, 500);
 				});
 
@@ -279,7 +302,11 @@ function createPortfolio(assetResult) {
 					window.clearTimeout(timeoutId);
 					imgIndex = pageId;
 					fakeImg.attr('src', imgSrcs[imgIndex]);
-					text.html(imgIndex + 1 + ' / ' + numImgs);
+					var cPageId = imgIndex + 1;
+					var lPageId = (cPageId - 1 <= 0) ? numImgs : (cPageId - 1);
+					var	rPageId = (cPageId + 1 > numImgs) ? 1 : (cPageId + 1);
+					lPage.html(lPageId + ' / ' + numImgs);
+					rPage.html(rPageId + ' / ' + numImgs);
 					if(dir === 'prev') {
 						img.removeClass('next');
 						img.addClass('prev');
@@ -295,6 +322,23 @@ function createPortfolio(assetResult) {
 				};
 
 				var eventTarget = $('#'+projectId);
+
+				// listen for open event
+				eventTarget.on("overlayopen", function(e) {
+					// hide arrows
+					lArrow.hide();
+					rArrow.hide();
+				});
+
+				// listen for opened event
+				eventTarget.on("overlayopened", function(e) {
+					// show arrows
+					lArrow.show();
+					rArrow.show();
+					// vertical align arrows
+					var actualImgHeight = img.width()/(img.width()/img.height());
+					sideColumn.height(Math.min(parseInt(img.attr('data-max-height')), actualImgHeight));
+				});
 
 				// listen for overlay page event
 				eventTarget.on("overlaypagechange", function(e) {
@@ -322,9 +366,15 @@ function createPortfolio(assetResult) {
 		var videoWidth = Math.min(1040, overlay.width());
 		video.attr('height', videoWidth / (16/9) + 'px');
 
-		var overlayMinHeight = $(window).height() - $('.header').height();
+		var windowHeight = $(window).height();
+
+		var overlayMinHeight = windowHeight - $('.header').height();
 		var portfolioImages = overlay.find('.portfolioImage');
-		portfolioImages.css('max-height', overlayMinHeight - 200);
-		overlay.css('min-height', overlayMinHeight);
+		var portfolioImageHeight = overlayMinHeight - 200;
+		portfolioImages.css('max-height', portfolioImageHeight);
+		portfolioImages.attr('data-max-height', portfolioImageHeight);
+		overlay.height(overlayMinHeight);
+		var portfolioContent = overlay.find('.portfolio-content');
+		portfolioContent.height(windowHeight - $('.header').height() - parseInt(overlay.css('padding'))*2);
 	});
 };

@@ -143,10 +143,20 @@ p {
 	padding: 5px;
 	font-size: 12px;
 	border: 1px solid #181818;
-	height: 58px;
-	margin:10px auto ;
+	height: 48px;
+	margin: 0px auto;
 	color:#555 !important;
 }
+
+.sideColumn{
+	height: auto !important;
+}
+
+.sideColumn .page-nav{
+	top: 0 !important;
+	margin-top: 0 !important;
+}
+
 }
 
 /*-----------------------------------------------------------------------------------*/
