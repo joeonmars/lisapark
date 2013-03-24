@@ -370,11 +370,11 @@ function createPortfolio(assetResult) {
 
 		var overlayMinHeight = windowHeight - $('.header').height();
 		var portfolioImages = overlay.find('.portfolioImage');
-		var portfolioImageHeight = overlayMinHeight - 200;
+		var portfolioImageHeight = overlayMinHeight - 100;
 		portfolioImages.css('max-height', portfolioImageHeight);
 		portfolioImages.attr('data-max-height', portfolioImageHeight);
 		overlay.height(overlayMinHeight);
 		var portfolioContent = overlay.find('.portfolio-content');
-		portfolioContent.height(windowHeight - $('.header').height() - parseInt(overlay.css('padding'))*2);
+		portfolioContent.height(windowHeight - $('.header').height() - 20*2);
 	});
 };
