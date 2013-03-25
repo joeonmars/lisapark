@@ -184,50 +184,45 @@ function createPortfolio(assetResult) {
 
 	var portfolioContainer = $('.portfolio');
 
-	var cols = [
-		'six', 'three', 'three',
-		'three', 'three', 'three', 'three',
-		'three', 'six', 'three'
-	];
-
 	for(i=0; i<l; ++i) {
 		var portfolio = portfolios[i];
-		var str = thumbnailTemplate.replace('{numcols}', 'three'/*cols[i%cols.length]*/).replace(/{folioid}/g, portfolio['id']).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
+		var str = thumbnailTemplate.replace('{numcols}', 'three').replace(/{folioid}/g, portfolio['id']).replace('{title}', portfolio['title']).replace('{tag}', portfolio['tag']).replace('{category}', portfolio['category']).replace('{id}', i+1).replace('images/thumbnail/placeholder.jpg', portfolio['thumbnail']);
 		var el = $(str);
-		$(portfolioContainer).append(el);
+		portfolioContainer.append(el);
+
+		el.find('img').load(function() {
+			portfolioContainer.isotope('reLayout');
+		});
 	}
 
-	// Clone portfolio items to get a second collection for Quicksand plugin
-	var $portfolioClone = $(".portfolio").clone();
-	
-	// Attempt to call Quicksand on every click event handler
-	$(".filter a").click(function(e){
-		
+	$(window).smartresize(function(){
+	  portfolioContainer.isotope({
+	    masonry: { columnWidth: portfolioContainer.width() / 4 }
+	  });
+	});
+
+	portfolioContainer.isotope({
+	  itemSelector : 'li',
+	  layoutMode: 'masonry',
+	  masonry: { columnWidth: portfolioContainer.width() / 4 }
+	});
+
+	$(".filter li").click(function(e){
 		$(".filter li").removeClass("currents");
-		
-		// Get the class attribute value of the clicked link
-		var $filterClass = $(this).parent().attr("class");
+		$(e.currentTarget).addClass("currents");
 
-		if ( $filterClass == "all" ) {
-			var $filteredPortfolio = $portfolioClone.find("li");
-		} else {
-			var $filteredPortfolio = $portfolioClone.find("li[data-type~=" + $filterClass + "]");
-		}
-		
-		// Call quicksand
-		$(".portfolio").quicksand( $filteredPortfolio, { 
-			duration: 800, 
-			easing: 'easeInOutQuad' 
-		}, function(){
-			
+		var dataFilter = $(e.currentTarget).attr('data-filter');
+		if(dataFilter === '.all') dataFilter = 'li';
+
+		portfolioContainer.isotope({
+			filter: dataFilter
 		});
-
-
-		$(this).parent().addClass("currents");
 
 		// Prevent the browser jump to the link anchor
 		e.preventDefault();
 	});
+
+	$(".filter li:first-child").trigger('click');
 
 	// create folio overlays
 	var overlayContainer = $('#overlay-wrapper');

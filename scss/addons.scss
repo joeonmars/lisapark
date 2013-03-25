@@ -8,6 +8,7 @@ $icon-layout:smart;
 @import "icon/*.png"; 
 @include all-icon-sprites;
 
+@import "isotope";
 @import "intro";
 
 *{
@@ -74,6 +75,10 @@ textarea{
 
 	>.row{
 		width: 100%;
+	}
+
+	.three{
+		width: 24.9%;
 	}
 }
 

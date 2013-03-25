@@ -35,10 +35,10 @@
 	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.quicksand.js"></script> 
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/jquery.foundation.reveal.js"></script>
 	<script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 	<script type="text/javascript" src="js/preloadjs-0.3.0.min.js"></script>
 	<script type="text/javascript" src="js/contact.js"></script>
 	<script type="text/javascript" src="js/addons.js"></script>
@@ -99,13 +99,13 @@ span.portfolio-inner {background:#e3007b;}
 			<!-- Category Filter -->
 			<div class="filter-wrap">
 				<ul class="filter"> 
-					<li class="all currents"><a href="#">All</a></li>
-					<li class="interactive-i"><a href="#">Interactive I</a></li>
-					<li class="interactive-ii"><a href="#">Interactive II</a></li>
-					<li class="installation"><a href="#">Installation</a></li>
-					<li class="painting"><a href="#">Painting</a></li>
-					<li class="performance"><a href="#">Performance</a></li>
-					<li class="photofilm"><a href="#">Photo/Film</a></li>
+					<li data-filter=".all"><a>All</a></li>
+					<li data-filter=".interactive-i"><a>Interactive I</a></li>
+					<li data-filter=".interactive-ii"><a>Interactive II</a></li>
+					<li data-filter=".installation"><a>Installation</a></li>
+					<li data-filter=".painting"><a>Painting</a></li>
+					<li data-filter=".performance"><a>Performance</a></li>
+					<li data-filter=".photofilm"><a>Photo/Film</a></li>
 				</ul> 
 			</div>
 
@@ -236,7 +236,7 @@ span.portfolio-inner {background:#e3007b;}
 <div id="hidden-wrapper">
 	<!-- thumbnail template -->
 	<div id="thumbnail-template">
-		<li class="{numcols} columns resize" data-id="id-{id}" data-type="{category}">
+		<li class="{numcols} columns resize {category}" data-id="id-{id}">
 			<a href="#/{folioid}">
 				<div class="portfolio_thumb"><img src="images/thumbnail/placeholder.jpg" alt="" />
 					<span class="portfolio-inner" >
