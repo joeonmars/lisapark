@@ -386,6 +386,7 @@ p {
 	font-weight:bold;
 	text-align:left;
 	float:left;
+	text-transform:capitalize;
 }
 
 .portfolio-meta .meta-list {

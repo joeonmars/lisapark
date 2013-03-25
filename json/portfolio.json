@@ -7,9 +7,11 @@
 			"tag": "Interactive I",
 			"description": "Inspired by Manray's photograph, I'm using my body as an instrument to recreate “Le Violon d'Ingres” into a performance. A nichrome wire attached on a cello bow creates sound when it touches a performer's body by calibrating the data into a melody. Since body is conductive, skin becomes a new interfaces for musical expression.",
 			"thumbnail": "images/thumbnail/2.jpg",
-			"videoid": "58863266",
-			"date": "2012",
-			"skills": "HTML / Javascript"
+			"videoid": "62507235",
+			"info": {
+				"date": "2012",
+				"skills": "HTML / Javascript"
+			}
 		},
 		{
 			"category": "interactive-i",
@@ -19,8 +21,10 @@
 			"description": "For this project, I'm using heart rate sensor(Polar wear link & transmitter). When my heart rate goes faster, a pitch of the sound will begin to go down and speed will start to slow down. The sound is a narration of the story of a young artist who has a tragic end because of the amount of pressure she received from the people. The story is called Depth Wish written by Patrick Suskind’s (the author of ‘Perfume’) “Three stories and a reflection”. I read this book when I was 18 and it was very memorable. I recorded my voice in both Korean and English and this will be played as performance begins.",
 			"thumbnail": "images/thumbnail/6.jpg",
 			"videoid": "61442808",
-			"date": "2012",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2012",
+				"skills": "HTML / Javascript"
+			}
 		},
 		{
 			"category": "performance",
@@ -39,8 +43,10 @@
 				"images/project/metamorphosis-i/7.jpg",
 				"images/project/metamorphosis-i/8.jpg"
 				],
-			"date": "2010",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2010",
+				"skills": "HTML / Javascript"
+			}
 		},
 		{
 			"category": "performance",
@@ -59,8 +65,10 @@
 				"images/project/metamorphosis-ii/7.jpg",
 				"images/project/metamorphosis-ii/8.jpg"
 				],
-			"date": "2010",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2010",
+				"skills": "HTML / Javascript"
+			}
 		},
 		{
 			"category": "photofilm",
@@ -73,8 +81,10 @@
 				"images/project/untitled/1.jpg",
 				"images/project/untitled/2.jpg"
 				],
-			"date": "9/2/2013",
-			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+			"info": {
+				"date": "2013",
+				"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+			}
 		},
 		{
 			"category": "photofilm",
@@ -93,8 +103,10 @@
 				"images/project/untitled-ii/7.jpg",
 				"images/project/untitled-ii/8.jpg"
 				],
-			"date": "9/2/2013",
-			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+			"info": {
+				"date": "2013",
+				"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+			}
 		},
 		{
 			"category": "photofilm",
@@ -104,8 +116,9 @@
 			"description": "I used ordinary daily objects to shoot this film such as hands, desks, chairs, computer screens, keyboards, and lightings. By using clydoscope, the objects become fractured into certain patterns and hardly distinguishable.",
 			"thumbnail": "images/thumbnail/15.jpg",
 			"videoid": "32021536",
-			"date": "2008",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2008"
+			}
 		},
 		{
 			"category": "performance",
@@ -121,8 +134,9 @@
 				"images/project/life-of-ms-flora/4.jpg",
 				"images/project/life-of-ms-flora/5.jpg"
 				],
-			"date": "2010",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2010"
+			}
 		},
 		{
 			"category": "installation",
@@ -141,8 +155,9 @@
 				"images/project/when-hope-is-not-enough/7.jpg",
 				"images/project/when-hope-is-not-enough/8.jpg"
 				],
-			"date": "9/2/2013",
-			"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+			"info": {
+				"date": "2013"
+			}
 		},
 		{
 			"category": "installation",
@@ -155,8 +170,10 @@
 				"images/project/i-didn-t-know-why-what-how/1.jpg",
 				"images/project/i-didn-t-know-why-what-how/2.jpg"
 				],
-			"date": "2010",
-			"skills": "Plaster, red ink"
+			"info": {
+				"date": "2010",
+				"skills": "Plaster, red ink"
+			}
 		},
 		{
 			"category": "photofilm",
@@ -165,9 +182,10 @@
 			"tag": "Photo/Film",
 			"description": "This video contains surreal elements, featuring dream-like qualities.",
 			"thumbnail": "images/thumbnail/16.jpg",
-			"fullimage": "images/project/aries.jpg",
-			"date": "2008",
-			"skills": "HTML / Javascript"
+			"videoid": "32021797",
+			"info": {
+				"date": "2008"
+			}
 		},
 		{
 			"category": "installation",
@@ -183,8 +201,10 @@
 				"images/project/she-sat-on-a-wall-had-a-great-fall/4.jpg",
 				"images/project/she-sat-on-a-wall-had-a-great-fall/5.jpg"
 				],
-			"date": "2010",
-			"skills": "light bulbs, plastic Barbie doll body"
+			"info": {
+				"date": "2010",
+				"skills": "light bulbs, plastic Barbie doll body"
+			}
 		},
 		{
 			"category": "installation",
@@ -201,8 +221,10 @@
 				"images/project/never-let-anyone-know/5.jpg",
 				"images/project/never-let-anyone-know/6.jpg"
 				],
-			"date": "2010",
-			"skills": "wood, steel door knob, ivory paint/ hologram papers, child mannequin, spangle embroidery fabric"
+			"info": {
+				"date": "2010",
+				"skills": "wood, steel door knob, ivory paint/ hologram papers, child mannequin, spangle embroidery fabric"
+			}
 		},
 		{
 			"category": "performance",
@@ -212,8 +234,9 @@
 			"description": "Nam Jun Paik did a performance of making paint marks on a paper with using his head. The movements were bold and aggressive. Inspired by Paik’s work, I wanted to write calligraphy in a meditative manner with a feminine approach. Su Shin Je Ga Chi Guk Pyung Chun Ha means to find a physical and emotional balance to refine one’s state of mind to further achieve greater things in life.",
 			"thumbnail": "images/thumbnail/17.jpg",
 			"fullimage": "images/project/17.jpg",
-			"date": "2007",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2007"
+			}
 		},
 		{
 			"category": "installation",
@@ -223,8 +246,9 @@
 			"description": "Lorem Ipsum...",
 			"thumbnail": "images/thumbnail/18.jpg",
 			"fullimage": "images/project/18.jpg",
-			"date": "2008",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2008"
+			}
 		},
 		{
 			"category": "painting",
@@ -245,19 +269,23 @@
 				"images/project/face-it/9.jpg",
 				"images/project/face-it/10.jpg"
 				],
-			"date": "2009",
-			"skills": "silkscreen, wood panel, paint, resin, plexiglass"
+			"info": {
+				"date": "2009",
+				"skills": "silkscreen, wood panel, paint, resin, plexiglass"
+			}
 		},
 		{
 			"category": "interactive-ii",
 			"id": "i-wish-i-said-hello",
 			"title": "I wish I said hello",
 			"tag": "Interactive II",
-			"description": "Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique.",
+			"description": "",
 			"thumbnail": "images/thumbnail/5.jpg",
 			"fullimage": "images/project/5.jpg",
-			"date": "2013",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2013",
+				"link": "http://iwishisaidhello.org/"
+			}
 		},
 		{
 			"category": "installation",
@@ -267,8 +295,33 @@
 			"description": "Inspired by the notion of relational aesthetics, my intent was to create a space where everyone can participate and experience the moment. I chose marshmallows because I associate them with playful childhood memories through their soft texture and sweet smells. Inside a limousine, hundreds of marshmallows were installed and I had a critique with my classmates for about an hour. In the beginning, everyone was excited at creating a festive atmosphere. But being crowded with 14 people in a restricted space, the stickiness of melted marshmallows and overwhelming smells made us feel uncomfortable as time goes by.",
 			"thumbnail": "images/thumbnail/12.jpg",
 			"fullimage": "images/project/marshmallow-limousine.jpg",
-			"date": "2009",
-			"skills": "HTML / Javascript"
+			"info": {
+				"date": "2009"
+			}
+		},
+		{
+			"category": "interactive-ii",
+			"id": "grumpy-wind-in-wonderland",
+			"title": "Grumpy wind in Wonderland",
+			"tag": "Interactive II",
+			"description": "",
+			"thumbnail": "images/thumbnail/5.jpg",
+			"videoid": "62474792",
+			"info": {
+				"date": "2013"
+			}
+		},
+		{
+			"category": "interactive-ii",
+			"id": "googles-next-creative-5",
+			"title": "Google's next Creative 5",
+			"tag": "Interactive II",
+			"description": "",
+			"thumbnail": "images/thumbnail/5.jpg",
+			"videoid": "62504122",
+			"info": {
+				"date": "2013"
+			}
 		}
 	]
 }

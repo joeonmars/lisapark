@@ -240,9 +240,20 @@ function createPortfolio(assetResult) {
 		var folioId = portfolio['id'];
 		var hasMultipleImages = $.isArray(portfolio['fullimage']);
 		var firstFullImageUrl = ((hasMultipleImages === true) ? portfolio['fullimage'][0] : portfolio['fullimage']);
-		var str = overlayTemplate.replace('{folioid}', folioId).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{date}', portfolio['date']).replace('{skills}', portfolio['skills']).replace('{category}', portfolio['tag']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', firstFullImageUrl || '');
+		var str = overlayTemplate.replace('{folioid}', folioId).replace('{title}', portfolio['title']).replace('{description}', portfolio['description']).replace('{category}', portfolio['tag']).replace('{videoid}', portfolio['videoid'] || '').replace('images/project/placeholder.jpg', firstFullImageUrl || '');
 		var el = $(str);
-		$(overlayContainer).append(el);
+		overlayContainer.append(el);
+
+		var infoUl = el.find('.portfolio-meta');
+		var info = portfolio['info'];
+		for(var key in info) {
+			var val = info[key];
+			if(val.substr(0, 7) === 'http://' || val.substr(0, 4) === 'www.') {
+				val = '<a target="_blank" href="' + val + '">' + val + '</a>';
+			}
+			var li = $('<li><span>'+key+'</span><div class="meta-list">'+val+'</div></li>');
+			infoUl.append(li);
+		}
 
 		// hide video or full image if either one does not exist
 		if(!imageUrl) {
