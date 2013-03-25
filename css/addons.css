@@ -102,6 +102,16 @@ textarea {
   display: none;
 }
 
+#about {
+  background: white;
+}
+#about h3 {
+  color: black;
+}
+#about p {
+  color: #666;
+}
+
 #portfolio {
   padding-top: 10px !important;
 }

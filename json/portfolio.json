@@ -5,12 +5,12 @@
 			"id": "le-violon-d-lisa",
 			"title": "Le violon d'lisa",
 			"tag": "Interactive I",
-			"description": "Inspired by Manray's photograph, I'm using my body as an instrument to recreate “Le Violon d'Ingres” into a performance. A nichrome wire attached on a cello bow creates sound when it touches a performer's body by calibrating the data into a melody. Since body is conductive, skin becomes a new interfaces for musical expression.",
+			"description": "In <i>Le Violon d'Lisa</i>, a nichrome wire attached on a cello bow is programmed to create sound when it touches a performer’s body. When the bow is in contact with a skin, the data is being collected then calibrated into sound with using Arduino, Max/MSP, and Ableton Live. The performance was inspired by Manray’s photograph of Le Violon d’Ingres to be created into a performance.",
 			"thumbnail": "images/thumbnail/2.jpg",
 			"videoid": "62507235",
 			"info": {
-				"date": "2012",
-				"skills": "HTML / Javascript"
+				"date": "Dec 2012",
+				"skills": "Arduino/ MaxMSP/ Ableton Live"
 			}
 		},
 		{
@@ -22,8 +22,8 @@
 			"thumbnail": "images/thumbnail/6.jpg",
 			"videoid": "61442808",
 			"info": {
-				"date": "2012",
-				"skills": "HTML / Javascript"
+				"date": "Dec 2011",
+				"skills": "Arduino/ Processing"
 			}
 		},
 		{
@@ -44,8 +44,8 @@
 				"images/project/metamorphosis-i/8.jpg"
 				],
 			"info": {
-				"date": "2010",
-				"skills": "HTML / Javascript"
+				"date": "Oct 2010",
+				"skills": " Fabrication (tissue papers, fabric)"
 			}
 		},
 		{
@@ -66,8 +66,8 @@
 				"images/project/metamorphosis-ii/8.jpg"
 				],
 			"info": {
-				"date": "2010",
-				"skills": "HTML / Javascript"
+				"date": "Oct 2010",
+				"skills": "Fabrication (5000 coffee filters, fabric)"
 			}
 		},
 		{
@@ -75,15 +75,15 @@
 			"id": "untitled",
 			"title": "Untitled",
 			"tag": "Photo/Film",
-			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
+			"description": "",
 			"thumbnail": "images/thumbnail/untitled.jpg",
 			"fullimage": [
 				"images/project/untitled/1.jpg",
 				"images/project/untitled/2.jpg"
 				],
 			"info": {
-				"date": "2013",
-				"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+				"date": "2007",
+				"skills": "Photo developing"
 			}
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "untitled-ii",
 			"title": "Untitled II",
 			"tag": "Photo/Film",
-			"description": "In my teenage years, I had dreams being chased by something or someone unknown. The dreams are so vivid that it creates an illusion like reality. The recurring dreams regularly haunted me. The door in this work represents an exit to escape from the nightmares.",
+			"description": "",
 			"thumbnail": "images/thumbnail/untitled2.jpg",
 			"fullimage": [
 				"images/project/untitled-ii/1.jpg",
@@ -104,8 +104,8 @@
 				"images/project/untitled-ii/8.jpg"
 				],
 			"info": {
-				"date": "2013",
-				"skills": "wooden bed frames, chicken wire, cotton fabrics, balsa woods, hairy fabrics, pillow, miniatured objects"
+				"date": "2007",
+				"skills": "Photo developing"
 			}
 		},
 		{
@@ -125,7 +125,7 @@
 			"id": "life-of-ms-flora",
 			"title": "Life of Ms.Flora",
 			"tag": "Performance",
-			"description": "“Life of Ms. Flora” is a decorated floral object that is personified into a human being. Ms. Flora is narcissistic who likes to wear beautiful clothes and spend times watching herself in a mirror. She looks gorgeous and seems to have everything in her own world but in reality, she is isolated.",
+			"description": "<i>Life of Ms. Flora</i> is a decorated floral object that is personified into a human being. Ms. Flora is narcissistic who likes to wear beautiful clothes and spend times watching herself in a mirror. She looks gorgeous and seems to have everything in her own world but in reality, she is isolated.",
 			"thumbnail": "images/thumbnail/1.jpg",
 			"fullimage": [
 				"images/project/life-of-ms-flora/1.jpg",
@@ -135,7 +135,8 @@
 				"images/project/life-of-ms-flora/5.jpg"
 				],
 			"info": {
-				"date": "2010"
+				"date": "Nov 2010",
+				"skills": "Fabrication (shower balls, tutu fabrics, tissue papers)"
 			}
 		},
 		{
@@ -156,7 +157,8 @@
 				"images/project/when-hope-is-not-enough/8.jpg"
 				],
 			"info": {
-				"date": "2013"
+				"date": "Dec 2010",
+				"skills": "Fabrication (bed frames, chicken wire, fabrics, miniatured objects)"
 			}
 		},
 		{
@@ -171,8 +173,8 @@
 				"images/project/i-didn-t-know-why-what-how/2.jpg"
 				],
 			"info": {
-				"date": "2010",
-				"skills": "Plaster, red ink"
+				"date": "Sept 2010",
+				"skills": "Fabrication (plaster, ink)"
 			}
 		},
 		{
@@ -184,7 +186,9 @@
 			"thumbnail": "images/thumbnail/16.jpg",
 			"videoid": "32021797",
 			"info": {
-				"date": "2008"
+				"date": "Aug 2007",
+				"skills": "Final cut Pro",
+				"duration": "2min 30sec"
 			}
 		},
 		{
@@ -202,8 +206,8 @@
 				"images/project/she-sat-on-a-wall-had-a-great-fall/5.jpg"
 				],
 			"info": {
-				"date": "2010",
-				"skills": "light bulbs, plastic Barbie doll body"
+				"date": "Oct 2010",
+				"skills": "Fabrication (light bulbs, plastic Barbie doll)"
 			}
 		},
 		{
@@ -222,32 +226,40 @@
 				"images/project/never-let-anyone-know/6.jpg"
 				],
 			"info": {
-				"date": "2010",
-				"skills": "wood, steel door knob, ivory paint/ hologram papers, child mannequin, spangle embroidery fabric"
+				"date": "Nov 2010",
+				"skills": "Fabrication (wood, door knob,hologram,mannequin, spangle embroidery fabric)"
 			}
 		},
 		{
 			"category": "performance",
-			"id": "su-shin-je-ga-chi-guk-pyung-chun-ha",
-			"title": "Su Shin Je Ga Chi Guk Pyung Chun Ha",
+			"id": "su-shin-je-ga",
+			"title": "Su Shin Je Ga ...",
 			"tag": "Performance",
 			"description": "Nam Jun Paik did a performance of making paint marks on a paper with using his head. The movements were bold and aggressive. Inspired by Paik’s work, I wanted to write calligraphy in a meditative manner with a feminine approach. Su Shin Je Ga Chi Guk Pyung Chun Ha means to find a physical and emotional balance to refine one’s state of mind to further achieve greater things in life.",
 			"thumbnail": "images/thumbnail/17.jpg",
 			"fullimage": "images/project/17.jpg",
 			"info": {
-				"date": "2007"
+				"date": "2007",
+				"skills": "Calligraphy",
+				"duration": "approximately 10 min"
 			}
 		},
 		{
 			"category": "installation",
-			"id": "project-18",
-			"title": "Project-18",
+			"id": "nostalgia",
+			"title": "Nostalgia",
 			"tag": "Installation",
-			"description": "Lorem Ipsum...",
+			"description": "",
 			"thumbnail": "images/thumbnail/18.jpg",
-			"fullimage": "images/project/18.jpg",
+			"fullimage": [
+				"images/project/nostalgia/1.jpg",
+				"images/project/nostalgia/2.jpg",
+				"images/project/nostalgia/3.jpg",
+				"images/project/nostalgia/4.jpg"
+				],
 			"info": {
-				"date": "2008"
+				"date": "Nov 2010",
+				"skills": "Fabrication (styrofoam, rolls of grasses, leaves, balsa woods, clay)"
 			}
 		},
 		{
@@ -270,8 +282,8 @@
 				"images/project/face-it/10.jpg"
 				],
 			"info": {
-				"date": "2009",
-				"skills": "silkscreen, wood panel, paint, resin, plexiglass"
+				"date": "Dec 2009",
+				"skills": "Silkscreen / Paint"
 			}
 		},
 		{
@@ -279,11 +291,12 @@
 			"id": "i-wish-i-said-hello",
 			"title": "I wish I said hello",
 			"tag": "Interactive II",
-			"description": "",
+			"description": "A missed connection is an occurrence where two or more people are unable to exchange contact information or the information that is exchanged is lost. These missed connections are generally associated with romance, but they may also be business-related or otherwise. Through the use of publications and websites some people seek to reconnect with their missed connection. <i>I Wish I Said Hello</i> attempts to bring missed connection stories back to the public space in the form of street art.",
 			"thumbnail": "images/thumbnail/5.jpg",
 			"fullimage": "images/project/5.jpg",
 			"info": {
-				"date": "2013",
+				"date": "May 2012",
+				"skills": "Street art/ Web",
 				"link": "http://iwishisaidhello.org/"
 			}
 		},
@@ -296,7 +309,9 @@
 			"thumbnail": "images/thumbnail/12.jpg",
 			"fullimage": "images/project/marshmallow-limousine.jpg",
 			"info": {
-				"date": "2009"
+				"date": "2009",
+				"skills": "Fabrication (marshmallow)",
+				"duration": "50 min"
 			}
 		},
 		{
@@ -304,11 +319,12 @@
 			"id": "grumpy-wind-in-wonderland",
 			"title": "Grumpy wind in Wonderland",
 			"tag": "Interactive II",
-			"description": "",
-			"thumbnail": "images/thumbnail/5.jpg",
+			"description": "<i>Big Screens</i> is a huge annual exhibition at IAC(Frank Gehry-designed headquarters) located in Chelsea, New York. We used IAC Video Wall, one of the largest high-resolution video walls in the world, 120 feet (37 m) wide and 11 feet (3.4 m) high. <i>Grumpy Wind in Wonderland</i> was an interactive mobile game with using a microphone as an interface by blowing on your phone. The goal of this game for the audience was to work together as a team to finish stripping people's clothes within the time frame of 2 min. The stronger the wind is, it is easier to blow off the people's clothes shown on the IAC Video Wall.",
+			"thumbnail": "images/thumbnail/19.jpg",
 			"videoid": "62474792",
 			"info": {
-				"date": "2013"
+				"date": "Mar 2013",
+				"skills": "After Effects/ Open Frameworks/ Processing"
 			}
 		},
 		{
@@ -317,10 +333,10 @@
 			"title": "Google's next Creative 5",
 			"tag": "Interactive II",
 			"description": "",
-			"thumbnail": "images/thumbnail/5.jpg",
+			"thumbnail": "images/thumbnail/20.jpg",
 			"videoid": "62504122",
 			"info": {
-				"date": "2013"
+				"date": "Mar 2013"
 			}
 		}
 	]
