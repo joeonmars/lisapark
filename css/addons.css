@@ -201,7 +201,7 @@ textarea {
   transform: perspective(4000) rotateY(15deg);
 }
 .portfolioImage.enlarged {
-  max-height: 100% !important;
+  max-height: 1200px !important;
   cursor: -webkit-zoom-out;
   cursor: -moz-zoom-out;
 }

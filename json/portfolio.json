@@ -293,7 +293,13 @@
 			"tag": "Interactive II",
 			"description": "A missed connection is an occurrence where two or more people are unable to exchange contact information or the information that is exchanged is lost. These missed connections are generally associated with romance, but they may also be business-related or otherwise. Through the use of publications and websites some people seek to reconnect with their missed connection. <i>I Wish I Said Hello</i> attempts to bring missed connection stories back to the public space in the form of street art.",
 			"thumbnail": "images/thumbnail/5.jpg",
-			"fullimage": "images/project/5.jpg",
+			"fullimage": [
+				"images/project/i-wish-i-said-hello/1.jpg",
+				"images/project/i-wish-i-said-hello/2.jpg",
+				"images/project/i-wish-i-said-hello/3.jpg",
+				"images/project/i-wish-i-said-hello/4.jpg",
+				"images/project/i-wish-i-said-hello/5.jpg"
+				],
 			"info": {
 				"date": "May 2012",
 				"skills": "Street art/ Web",
@@ -307,7 +313,7 @@
 			"tag": "Installation",
 			"description": "Inspired by the notion of relational aesthetics, my intent was to create a space where everyone can participate and experience the moment. I chose marshmallows because I associate them with playful childhood memories through their soft texture and sweet smells. Inside a limousine, hundreds of marshmallows were installed and I had a critique with my classmates for about an hour. In the beginning, everyone was excited at creating a festive atmosphere. But being crowded with 14 people in a restricted space, the stickiness of melted marshmallows and overwhelming smells made us feel uncomfortable as time goes by.",
 			"thumbnail": "images/thumbnail/12.jpg",
-			"fullimage": "images/project/marshmallow-limousine.jpg",
+			"videoid": "62660262",
 			"info": {
 				"date": "2009",
 				"skills": "Fabrication (marshmallow)",
