@@ -1,9 +1,7 @@
 /* Filter */
 
 .filter-wrap {
-border-top:1px dotted #282828;
-border-bottom:1px dotted #282828;
-margin-bottom:40px;
+margin-bottom:60px;
 padding:2px 0;
 }
 
@@ -14,30 +12,34 @@ padding:2px 0;
 
 .filter li {
 	float: left;
-	padding: 2px 0px;
-	border: 1px solid #181818;
-	background:#282828;
+	padding: 6px 0px;
 	cursor: pointer;
-	-webkit-transition: background .1s ease-out;
-  -moz-transition: background .1s ease-out;
-  -o-transition: background .1s ease-out;
-  transition: background .1s ease-out;
+	border-bottom: 1px solid #181818;
+	-webkit-transition: border .5s ease-out;
+    -moz-transition: border .5s ease-out;
+    -o-transition: border .5s ease-out;
+    transition: border .5s ease-out;
+}
+
+.filter li:first-child a{
+	border-left: none;
 }
 
 .filter li a { 
 	display: block;
-	padding: 5px 20px;
-	color: #fff;
+	padding: 0px 20px;
+	color: #888;
 	text-transform:uppercase;
-	font-size:13px;
-	letter-spacing:0.4px;
-	font-weight:400;
+	font-size:10px;
+	letter-spacing:2px;
+	font-weight: bold;
+	font-family: "Quicksand";
+	border-left: 1px dotted #282828;
 }
 
-.filter li:hover {background:#e3007b;}
-.filter li a:hover {color: #fff !important;}
-.currents  {background:#e3007b !important;}
-.currents a {	color: #fff !important;}
+.filter li:hover {border-bottom: 1px solid #e3007b;}
+.currents  {border-bottom: 1px solid #e3007b !important;}
+.currents a {color: white !important;}
 
 
 /* Portfolio Items */
