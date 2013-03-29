@@ -1,9 +1,10 @@
 var header;
 var introSection;
 var introVideo;
-var videoMinRatio = 1024/768;
+var videoMinRatio = 1280/720;
 var isIntroVideoPaused = false;
 var isIntroReady = false;
+var overlayId = null;
 
 window.enableScroll = function() {
 	$(document.body).removeClass('noScroll');
@@ -86,10 +87,11 @@ $(window).hashchange( function(){
 	  	$(folioId).reveal({
 	  		open: function() {
 	  			window.disableScroll();
-	  			$(folioId).trigger('overlayopen');
+	  			console.log('open ' + folioId);
+	  			$(folioId).trigger({type:'overlayopen'});
 	  		},
 	  		opened: function() {
-	  			$(folioId).trigger('overlayopened');
+	  			$(folioId).trigger({type:'overlayopened'});
 	  		},
 	  		close: function() {
 	  			window.enableScroll();
@@ -114,7 +116,7 @@ $(window).hashchange( function(){
 });
 
 // a global resize handler
-$(window).resize(function() {
+$(window).smartresize(function() {
   // resize intro video section
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
@@ -122,6 +124,9 @@ $(window).resize(function() {
   var introSectionHeight = (windowWidth/windowHeight >= videoMinRatio) ? (windowHeight - headerHeight) : (windowWidth / videoMinRatio);
   $(introSection).css('padding-top', headerHeight+'px');
   $(introSection).height(introSectionHeight);
+
+  // resize current overlay
+	$('#'+overlayId).trigger({type: 'overlayresize'});
 });
 
 
@@ -279,108 +284,116 @@ function createPortfolio(assetResult) {
 		var nav = el.find('.page-nav');
 		if(!hasMultipleImages) {
 			nav.hide();
-		}else {
-			(function() {
-				var projectId = portfolio['id'];
-				var imgSrcs = portfolio['fullimage'];
-				var numImgs = imgSrcs.length;
-				var lArrow = nav.find('.lArrow');
-				var rArrow = nav.find('.rArrow');
-				var lPage = nav.find('.lPage');
-				var rPage = nav.find('.rPage');
-				var img = $('#'+projectId+' .portfolioImage');
-				var imgIndex = -1;
-				var timeoutId;
-				var fakeImg = $('<img>');
-				var sideColumn = $('#'+projectId+' .sideColumn');
+		}
 
-				// onload of image
-				fakeImg.load(function() {
-					window.clearTimeout(timeoutId);
-					timeoutId = window.setTimeout(function() {
-						img.attr('src', fakeImg.attr('src')).removeClass('prev next');
-						// vertical align arrows
-						eventTarget.trigger("overlayopened");
-					}, 500);
-				});
+		(function() {
+			var projectId = portfolio['id'];
+			var imgSrcs = portfolio['fullimage'] || [''];
+			var numImgs = imgSrcs ? imgSrcs.length : 0;
+			var lArrow = nav.find('.lArrow');
+			var rArrow = nav.find('.rArrow');
+			var lPage = nav.find('.lPage');
+			var rPage = nav.find('.rPage');
+			var overlay = $('#'+projectId);
+			var img = overlay.find('.portfolioImage');
+			var imgIndex = -1;
+			var timeoutId;
+			var fakeImg = $('<img>');
+			var sideColumn = overlay.find('.sideColumn');
+			var portfolioContainer = overlay.find('.portfolio-fullimg');
+			var portfolioContent = overlay.find('.portfolio-content');
+			var video = overlay.find('.portfolioVideo');
 
-				var toPage = function(pageId, dir) {
-					window.clearTimeout(timeoutId);
-					imgIndex = pageId;
-					fakeImg.attr('src', imgSrcs[imgIndex]);
-					var cPageId = imgIndex + 1;
-					var lPageId = (cPageId - 1 <= 0) ? numImgs : (cPageId - 1);
-					var	rPageId = (cPageId + 1 > numImgs) ? 1 : (cPageId + 1);
-					lPage.html(lPageId + ' / ' + numImgs);
-					rPage.html(rPageId + ' / ' + numImgs);
-					if(dir === 'prev') {
-						img.removeClass('next');
-						img.addClass('prev');
-					}else {
-						img.removeClass('prev');
-						img.addClass('next');
-					}
+			// onload of image
+			fakeImg.load(function() {
+				window.clearTimeout(timeoutId);
+				timeoutId = window.setTimeout(function() {
+					img.attr('src', fakeImg.attr('src')).removeClass('prev next');
 
-					var lastPageId = (pageId - 1 < 0) ? numImgs : pageId - 1 + 1;
-					var nextPageId = (pageId + 1 > numImgs-1) ? 1 : pageId + 1 + 1;
-					lArrow.attr('href', '#/'+projectId+'/'+lastPageId);
-					rArrow.attr('href', '#/'+projectId+'/'+nextPageId);
-				};
-
-				var eventTarget = $('#'+projectId);
-
-				// listen for open event
-				eventTarget.on("overlayopen", function(e) {
-					// hide arrows
-					lArrow.hide();
-					rArrow.hide();
-				});
-
-				// listen for opened event
-				eventTarget.on("overlayopened", function(e) {
-					// show arrows
+					// show and vertical align arrows
 					lArrow.show();
 					rArrow.show();
-					// vertical align arrows
 					var actualImgHeight = img.width()/(img.width()/img.height());
 					sideColumn.height(Math.min(parseInt(img.attr('data-max-height')), actualImgHeight));
-				});
+				}, 500);
+			});
 
-				// listen for overlay page event
-				eventTarget.on("overlaypagechange", function(e) {
-					if(e.pageId < 0 || e.pageId > (numImgs - 1) || e.pageId === imgIndex) {
-						return false;
-					}else {
-						toPage(e.pageId, ((e.pageId < imgIndex) ? 'prev' : 'next'));
-					}
-				});
+			var toPage = function(pageId, dir) {
+				window.clearTimeout(timeoutId);
+				imgIndex = pageId;
+				fakeImg.attr('src', imgSrcs[imgIndex]);
+				var cPageId = imgIndex + 1;
+				var lPageId = (cPageId - 1 <= 0) ? numImgs : (cPageId - 1);
+				var	rPageId = (cPageId + 1 > numImgs) ? 1 : (cPageId + 1);
+				lPage.html(lPageId + ' / ' + numImgs);
+				rPage.html(rPageId + ' / ' + numImgs);
+				if(dir === 'prev') {
+					img.removeClass('next');
+					img.addClass('prev');
+				}else {
+					img.removeClass('prev');
+					img.addClass('next');
+				}
 
-				// trigger page event
-				eventTarget.trigger({
-					type: "overlaypagechange",
-					projectId: projectId,
-					pageId: 0
-				});
-			})();
-		}
+				var lastPageId = (pageId - 1 < 0) ? numImgs : pageId - 1 + 1;
+				var nextPageId = (pageId + 1 > numImgs-1) ? 1 : pageId + 1 + 1;
+				lArrow.attr('href', '#/'+projectId+'/'+lastPageId);
+				rArrow.attr('href', '#/'+projectId+'/'+nextPageId);
+			};
+
+			// listen for resize event
+			overlay.on("overlayresize", function(e) {
+				var videoWidth = Math.min(1040, portfolioContainer.width());
+				video.attr('height', videoWidth / videoMinRatio + 'px');
+
+				var windowHeight = $(window).height();
+
+				var overlayMinHeight = windowHeight - $('.header').height();
+				var portfolioImageHeight = overlayMinHeight - 100;
+				img.css('max-height', portfolioImageHeight);
+				img.attr('data-max-height', portfolioImageHeight);
+				overlay.height(overlayMinHeight);
+				portfolioContent.height(windowHeight - $('.header').height() - 20*2);
+
+				// vertical align arrows
+				var actualImgHeight = img.width()/(img.width()/img.height());
+				sideColumn.height(Math.min(parseInt(img.attr('data-max-height')), actualImgHeight));
+
+				console.log(projectId + " overlayresize");
+			});
+
+			// listen for open event
+			overlay.on("overlayopen", function(e) {
+				// hide arrows
+				lArrow.hide();
+				rArrow.hide();
+				overlayId = projectId;
+
+				// reload image
+				if(imgIndex < 0) {
+					toPage(0);
+				}
+
+				console.log(projectId + " overlayopen");
+			});
+
+			// listen for opened event
+			overlay.on("overlayopened", function(e) {
+				console.log(projectId + " overlayopened");
+			});
+
+			// listen for overlay page event
+			overlay.on("overlaypagechange", function(e) {
+				console.log(projectId + ' overlaypagechange');
+
+				if(e.pageId < 0 || e.pageId > (numImgs - 1) || e.pageId === imgIndex) {
+					return false;
+				}else {
+					toPage(e.pageId, ((e.pageId < imgIndex) ? 'prev' : 'next'));
+				}
+			});
+
+		})();
 	};
 
-	// resize the videos in iframe
-	var video = $('.portfolioVideo');
-	var overlay = $('.reveal-modal');
-	$(window).resize(function() {
-		var videoWidth = Math.min(1040, overlay.width());
-		video.attr('height', videoWidth / (16/9) + 'px');
-
-		var windowHeight = $(window).height();
-
-		var overlayMinHeight = windowHeight - $('.header').height();
-		var portfolioImages = overlay.find('.portfolioImage');
-		var portfolioImageHeight = overlayMinHeight - 100;
-		portfolioImages.css('max-height', portfolioImageHeight);
-		portfolioImages.attr('data-max-height', portfolioImageHeight);
-		overlay.height(overlayMinHeight);
-		var portfolioContent = overlay.find('.portfolio-content');
-		portfolioContent.height(windowHeight - $('.header').height() - 20*2);
-	});
 };
