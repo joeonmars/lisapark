@@ -111,7 +111,7 @@ $(window).hashchange( function(){
 	  	return;
   	}
   }
-  
+
   $('.close-reveal-modal').trigger('click');
 });
 
@@ -140,6 +140,17 @@ $(window).scroll(function(e) {
 
 
 $(document).ready(function() {
+	$('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+
+  $('.navigation').onePageNav({
+		scrollChange: function(currentListItem) {
+			$('.close-reveal-modal').trigger('click');
+    }
+  });
+  
   // store dom references
   header = $('.header')[0];
   introSection = $('#intro');
@@ -372,6 +383,10 @@ function createPortfolio(assetResult) {
 				// reload image
 				if(imgIndex < 0) {
 					toPage(0);
+				}else {
+					var src = fakeImg.attr('src');
+					fakeImg.attr('src', '');
+					fakeImg.attr('src', src);
 				}
 
 				console.log(projectId + " overlayopen");
@@ -396,4 +411,8 @@ function createPortfolio(assetResult) {
 		})();
 	};
 
+	// add close event listeners
+	$('.close-reveal-modal').click(function() {
+		window.location.hash = '/';
+	});
 };

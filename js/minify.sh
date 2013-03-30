@@ -10,6 +10,8 @@ uglifyjs ${BASEDIR}/jquery-1.8.3.min.js \
 				 ${BASEDIR}/jquery.foundation.reveal.js \
 				 ${BASEDIR}/jquery.ba-hashchange.min.js \
 				 ${BASEDIR}/jquery.isotope.min.js \
+				 ${BASEDIR}/jquery.scrollTo.js \
+				 ${BASEDIR}/jquery.nav.js \
 				 ${BASEDIR}/preloadjs-0.3.0.min.js \
 				 ${BASEDIR}/contact.js \
 				 ${BASEDIR}/addons.js \
