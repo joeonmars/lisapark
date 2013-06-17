@@ -2,6 +2,19 @@
 	"portfolio": [
 		{
 			"category": "interactive-i",
+			"id": "eunoia",
+			"title": "Eunoia",
+			"tag": "Interactive I",
+			"description": "“Eunoia” is a performance that uses my brainwaves -- collected via EEG sensor-- to manipulate the motions of water. It derives from the Greek word “ey” (well) + “nous” (mind) meaning “beautiful thinking”. EEG is a brainwave detecting sensor. It measures frequencies of my brain activity (Alpha, Beta, Delta, Gamma, Theta) relating to my state of consciousness while wearing it. The data collected from EEG is translated in realtime to modulate vibrations of sound with using software programs. EEG sends the information of my brain activity to Processing, which is linked with Max/MSP to receive data and generate sound from Reaktor.",
+			"thumbnail": "images/thumbnail/20.jpg",
+			"videoid": "65175792",
+			"info": {
+				"date": "April 2013",
+				"link": "http://thecreatorsproject.vice.com/blog/eunoia-seeking-enlightenment-by-tracking-brainwaves"
+			}
+		},
+		{
+			"category": "interactive-i",
 			"id": "le-violon-d-lisa",
 			"title": "Le violon d'lisa",
 			"tag": "Interactive I",
@@ -331,18 +344,6 @@
 			"info": {
 				"date": "Mar 2013",
 				"skills": "After Effects/ Open Frameworks/ Processing"
-			}
-		},
-		{
-			"category": "interactive-i",
-			"id": "eunoia",
-			"title": "Eunoia",
-			"tag": "Interactive I",
-			"description": "",
-			"thumbnail": "images/thumbnail/20.jpg",
-			"videoid": "65175792",
-			"info": {
-				"date": "April 2013"
 			}
 		}
 	]
